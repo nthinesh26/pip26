@@ -13,7 +13,7 @@ Route::get('/tester', function () {
 });
 
 Route::get('/send-email/{user}', function($user_id){
-    $user = User::find($user_id) ?? null;
+    $user = User::find($user_id) ?? null
     $mail = \Mail::to($user->email)
                 ->send(new ConfirmEmail($user->id));
     dd($mail);
