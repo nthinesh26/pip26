@@ -1,3 +1,8 @@
+@extends('errors::minimal')
+
+@section('title', __('Page Expired'))
+@section('code', '500')
+
 @extends('pages.general.registrartion')
 
 @section('content')
