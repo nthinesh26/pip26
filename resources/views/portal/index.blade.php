@@ -8,7 +8,7 @@
 
     @php
         if ($flag) {
-            $address = '';
+            $address = ''
             if ($user->type == 'local') {
                 $txt = json_decode($profile->company_address);
                 $address .= $txt->line_1;
