@@ -2,8 +2,8 @@
 
 @section('title', __('Page Expired'))
 @section('code', '500')
-@section('message', __('Page Expired'))
-@endsection
+@section('message')
+
 @extends('pages.general.registrartion')
 
 @section('content')
@@ -53,4 +53,5 @@
             </div>
         </div>
     </div>
+@endsection
 @endsection
