@@ -66,7 +66,7 @@ class PipController extends Controller
         $com = auth()->user()->profile();
         if ($type == 'local-com' && $page == 'p1') {
             $update = $com->updateCompany('p1');
-            dd($update);
+            dd([$update, request()->all()]);
             if ($update) {
                 session()->flash('message', "<script>Swal.fire({title: 'Langkah 1 berjaya dikemas kini. Teruskan ke langkah seterusnya.', text: 'Maklumat berjaya direkodkan.', icon: 'success'});</script>");
                 return redirect('/profile/application/fill/' . WebTool::enc('2'));
