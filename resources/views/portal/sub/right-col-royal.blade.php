@@ -65,7 +65,7 @@
                                      fill="currentColor"></path>
                              </svg>
                          </span>
-                         <span class="pip-orgmeta-contact-text">{{ auth()->user()->name }}</span>
+                         <span class="pip-orgmeta-contact-text">{{ $profile->agency_phone }}</span>
                      </div>
                  </div>
              </div>

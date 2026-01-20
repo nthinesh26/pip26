@@ -72,7 +72,7 @@ class Royal extends Model
                 'user_id' => $user->id,
                 'agensi_name' => request()->agensi_name,
                 'agency_website' => request()->agensi_website,
-                'agency_phone' => request()->account_phone ?? '_',
+                'agency_phone' => request()->agensi_phonenumber ?? '_',
                 'agency_email' => request()->agensi_email,
                 'logo' => 'not-submitted',
                 'company_established' => request()->company_established,
