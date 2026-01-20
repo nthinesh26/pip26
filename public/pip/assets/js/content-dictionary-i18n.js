@@ -2819,10 +2819,54 @@ window.PIP_I18N_DICTIONARY = {
             ms: "Tempoh Projek",
             en: "Project Duration",
         },
-
+        pip_remove_dir: {
+            ms: "Rekod berjaya dipadam.",
+            en: "Record has been successfully removed.",
+        },
+        message_for_loc_55: {
+            ms: "Maklumat Syarikat Tempatan berjaya dhantar. Sila semak e-mel untuk mengaktifkan akaun",
+            en: "Local Company Information successfully submitted. Please check your email to activate your account.",
+        },
+        message_for_oem_56: {
+            ms: "Pendaftaran OEM berjaya dihantar. Sila semak e-mel untuk mengaktifkan akaun.",
+            en: "OEM registration successfully submitted. Please check your email to activate your account.",
+        },
+        message_for_mail_existing: {
+            ms: "Alamat e-mel yang dimasukkan telah berdaftar dalam sistem.",
+            en: "The email address entered is already registered in the system.",
+        },
         pip_wishlist_form_10: {
             ms: "Kesan dan Manfaat Projek kepada Malaysia",
             en: "Impact and Benefits of the Project to Malaysia",
+        },
+        pip_wishlist_form_11: {
+            ms: "Maklumat Syarikat Tempatan berjaya dhantar. Sila semak e-mel untuk mengaktifkan akaun.",
+            en: "Step 1 was successfully updated. Continue to the next step.",
+        },
+        pip_wishlist_form_12: {
+            ms: "Maklumat Syarikat Tempatan berjaya dhantar. Sila semak e-mel untuk mengaktifkan akaun.",
+            en: "Local Company Information successfully submitted. Please check your email to activate your account.",
+        },
+        pip_wishlist_form_13: {
+            ms: "Ralat berlaku semasa pendaftaran. Sila semak maklumat dan hantar semula.",
+            en: "An error occurred during registration. Please check the information and resubmit.",
+        },
+        //Registration is not complete. Please resubmit.
+        pip_wishlist_form_14: {
+            ms: "Pendaftaran belum lengkap. Sila hantar semula.",
+            en: "Registration is not complete. Please resubmit.",
+        },
+        pip_local_001: {
+            ms: "Langkah 1 berjaya dikemas kini. Teruskan ke langkah seterusnya.",
+            en: "Step 1 was successfully updated. Continue to the next step.",
+        },
+        pip_local_002: {
+            ms: "Maklumat Syarikat Tempatan berjaya dhantar. Sila semak e-mel untuk mengaktifkan akaun.",
+            en: "Local Company Information successfully submitted. Please check your email to activate your account.",
+        },
+        pip_local_003: {
+            ms: "Maklumat Syarikat Tempatan berjaya dhantar. Sila semak e-mel untuk mengaktifkan akaun.",
+            en: "Local Company Information successfully submitted. Please check your email to activate your account.",
         },
     },
 };

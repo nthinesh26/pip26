@@ -39,7 +39,7 @@
                                 <a href="/pip/profile/view-wishlist/{{ WebTool::enc($wh->id) }}" target="_blank"
                                     class="mb-2"><input type='button' class='btn btn-default btn-sm'
                                         style="border: 1px solid #003A8F" name='view-wish-list' id='view-wish-list'
-                                        value='LIHAT CADNGAN' /></a> <br /><br />
+                                        value='LIHAT CADANGAN' /></a> <br /><br />
                                 <div class="pip-wc-label">NOMBOR CADANGAN</div>
                                 <div class="pip-wc-value">{{ $wh->wishListID() }}</div>
                             </div>
