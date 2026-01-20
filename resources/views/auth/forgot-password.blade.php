@@ -192,6 +192,31 @@
         })();
     </script>
 
+
+    <script>
+            $(document).ready(function(e){
+                if($("#reg").html() == "Daftar")
+                    $("#reg").attr('href', 'https://myip.mod.gov.my/daftar-organisasi');
+                else
+                    $("#reg").attr('href', 'https://myip.mod.gov.my/register-organization');
+            });
+
+            document.addEventListener("click", function (e) {
+              const btn = e.target && e.target.closest ? e.target.closest("[data-lang],[data-lang-switch]") : null;
+              if (!btn) return;
+
+              const v = (btn.getAttribute("data-lang") || btn.getAttribute("data-lang-switch") || "").toLowerCase();
+
+              if(v == 'en')
+                $("#reg").attr('href', 'https://myip.mod.gov.my/register-organization');
+              else
+                $("#reg").attr('href', 'https://myip.mod.gov.my/daftar-organisasi');
+              e.preventDefault();
+              //setLanguage(v);
+        });
+
+    </script>
+
 </body>
 
 </html>

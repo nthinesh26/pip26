@@ -309,4 +309,5 @@
   // Optional API
   window.PIP_I18N = window.PIP_I18N || {};
   window.PIP_I18N.setLanguage = setLanguage;
+
 })();

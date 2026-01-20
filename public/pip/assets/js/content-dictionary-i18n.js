@@ -2192,7 +2192,7 @@ window.PIP_I18N_DICTIONARY = {
         },
 
         pip_prereg_academia_form_2_5: {
-            ms: "Email Organisasi",
+            ms: "E-mel Organisasi",
             en: "Organisation's Email",
         },
 
@@ -2868,5 +2868,13 @@ window.PIP_I18N_DICTIONARY = {
             ms: "Maklumat Syarikat Tempatan berjaya dhantar. Sila semak e-mel untuk mengaktifkan akaun.",
             en: "Local Company Information successfully submitted. Please check your email to activate your account.",
         },
+        pip_local_004: {
+            ms: "HANTAR",
+            en: "SUBMIT",
+        },
+        reg_link:{
+            ms: "https://myip.mod.gov.my/daftar-organisasi",
+            en: "https://myip.mod.gov.my/register-organization",
+        }
     },
 };

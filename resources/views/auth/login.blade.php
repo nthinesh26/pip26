@@ -15,7 +15,10 @@
     <link href="/pip/assets/css/vendors/sppb-animate.min.css" rel="stylesheet" />
     <link href="/pip/assets/css/vendors/sppb-color-switcher.min.css" rel="stylesheet" />
     <link href="/pip/assets/css/vendors/sppb-dynamic-content.min.css" rel="stylesheet" />
-
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -75,7 +78,7 @@
                         <div class="pip-login-links">
                             <a href="/forgot-password">Lupa kata laluan?</a>
                             <span aria-hidden="true">|</span>
-                            <a href="https://myip.mod.gov.my/daftar-organisasi " target="_blank">Daftar</a>
+                            <a href="https://myip.mod.gov.my/daftar-organisasi"  id="reg" target="_blank">Daftar</a>
                         </div>
                         @if (session('status'))
                             <div class="alert alert-success">
@@ -108,10 +111,36 @@
         <div class="pip-footer-bar"></div>
     </footer>
 
+
     <script src="/pip/assets/js/portal-form.js?x={{ rand(111, 999) }}" defer></script>
     <script src="/pip/assets/js/content-dictionary-i18n.js?x={{ rand(111, 999) }}" defer></script>
     <script src="/pip/assets/js/portal-i18n.v1.0.js?x={{ rand(111, 999) }}" defer></script>
     <script src="/pip/assets/js/portal-form-validation.js?x={{ rand(111, 999) }}" defer></script>
+
+    <script>
+            $(document).ready(function(e){
+                if($("#reg").html() == "Daftar")
+                    $("#reg").attr('href', 'https://myip.mod.gov.my/daftar-organisasi');
+                else
+                    $("#reg").attr('href', 'https://myip.mod.gov.my/register-organization');
+            });
+
+            document.addEventListener("click", function (e) {
+              const btn = e.target && e.target.closest ? e.target.closest("[data-lang],[data-lang-switch]") : null;
+              if (!btn) return;
+
+              const v = (btn.getAttribute("data-lang") || btn.getAttribute("data-lang-switch") || "").toLowerCase();
+
+              if(v == 'en')
+                $("#reg").attr('href', 'https://myip.mod.gov.my/register-organization');
+              else
+                $("#reg").attr('href', 'https://myip.mod.gov.my/daftar-organisasi');
+              e.preventDefault();
+              //setLanguage(v);
+        });
+
+    </script>
+
 </body>
 
 </html>
