@@ -58,7 +58,7 @@
                                     <tr>
                                         <td>
                                             <!-- Reuse same header asset for consistency -->
-                                            <img src="{{ $url }}/pip/assets/img/email/header.png" width="660" />
+                                            <img src="{{ $url }}/pip/assets/img/email/pwd_reset_header.png" width="660" />
                                         </td>
                                     </tr>
                                 </table>
