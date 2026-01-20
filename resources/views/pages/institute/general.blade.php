@@ -114,7 +114,7 @@
                             </div>
 
                             <div class="col-12 col-md-6">
-                                <label class="form-label">Email Organisasi <span class="pip-required">*</span></label>
+                                <label class="form-label">E-mel Organisasi <span class="pip-required">*</span></label>
                                 <input class="form-control" type="email" name="organisation_email"
                                     placeholder="user@example.com" required>
                             </div>
