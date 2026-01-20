@@ -17,11 +17,11 @@ Route::get('/metrics', function () {
 })->middleware('metrics');
 
 Route::get('/test-mail', function () {
-    try {
-        \Mail::to('app@example.com')->send(new TestMail());
-    } catch (\Exception $e) {
-        dd($e->getMessage());
-    }
+    // try {
+    //     \Mail::to('app@example.com')->send(new TestMail());
+    // } catch (\Exception $e) {
+    //     dd($e->getMessage());
+    // }
 });
 
 include 'user.php';
