@@ -62,7 +62,7 @@
                              </svg>
                          </span>
 
-                         <span class="pip-orgmeta-contact-text">{{ $profile->organisation_phonenumber }}</span>
+                         <span class="pip-orgmeta-contact-text">{{ '111' }}</span>
                      </div>
                  </div>
              </div>
