@@ -61,6 +61,7 @@
                                      fill="currentColor"></path>
                              </svg>
                          </span>
+
                          <span class="pip-orgmeta-contact-text">{{ $profile->organisation_phonenumber }}</span>
                      </div>
                  </div>
