@@ -43,36 +43,36 @@
                                 <div class="card-body">
                                     <div class="row g-3">
                                         <div class="col-md-6">
-                                            <label class="form-label" for="director_name">Nama</label>
+                                            <label class="form-label" for="director_name">Nama <span class="text-danger">*</span></label>
                                             <input type="text" class="form-control" id="director_name"
                                                 name="director_name" placeholder="Contoh: Ahmad bin Ali">
                                         </div>
                                         <div class="col-md-6">
                                             <label class="form-label" for="director_id_passport">No Kad Pengenalan /
-                                                Pasport</label>
+                                                Pasport <span class="text-danger">*</span></label>
                                             <input type="text" class="form-control" id="director_id_passport"
                                                 name="director_id_passport" placeholder="Contoh: 990101-14-1234">
                                         </div>
                                         <div class="col-md-6">
-                                            <label class="form-label" for="director_nationality">Warganegara</label>
+                                            <label class="form-label" for="director_nationality">Warganegara <span class="text-danger">*</span></label>
                                             <input type="text" class="form-control" id="director_nationality"
                                                 name="director_nationality" placeholder="Contoh: Malaysia">
                                         </div>
                                         <div class="col-md-6">
-                                            <label class="form-label" for="director_position">Jawatan</label>
+                                            <label class="form-label" for="director_position">Jawatan <span class="text-danger">*</span></label>
                                             <input type="text" class="form-control" id="director_position"
                                                 name="director_position" placeholder="Contoh: Pengarah">
                                         </div>
                                         <div class="col-md-6">
+                                                %< /label>
                                             <label class="form-label" for="director_shareholding_pct">Pegangan Saham
-                                                %</label>
                                             <input type="number" class="form-control" id="director_shareholding_pct"
                                                 name="director_shareholding_pct" min="1" max="100"
                                                 placeholder="1 - 100">
                                         </div>
 
                                         <div class="col-md-6">
-                                            <label class="form-label d-block">Status</label>
+                                            <label class="form-label d-block">Status <span class="text-danger">*</span></label>
                                             <div class="d-flex flex-wrap gap-3">
                                                 <div class="pip-radio-grid">
                                                     <input class="pip-radio" type="radio" name="director_status"
