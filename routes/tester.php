@@ -13,7 +13,7 @@ Route::get('/tester', function () {
 });
 
 Route::get('/gen/{id}', function($id){
-    echo '<a href="https://app-myip.boustead.com.my/pip/account/active/"' . WebTool::enc($id, 3) .'>LNK</a>';
+    echo '<a href="https://app-myip.boustead.com.my/pip/account/active/'.WebTool::enc($id, 3).'" target="_blank">LNK</a>';
 });
 
 Route::get('/send-email/{user}', function($user_id){
