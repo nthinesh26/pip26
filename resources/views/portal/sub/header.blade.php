@@ -22,7 +22,7 @@
         @include('pip.logo')
         <nav aria-label="Menu utama" class="pip-menu pip-menu--mock">
             <ul>
-                <li class="[[NAV_ACTIVE_HOME]]"><a href="https://myip.mod.gov.my/" data-i18n="nav_home" target="_blank">LAMAN UTAMA</a></li>
+                <li class="[[NAV_ACTIVE_HOME]]"><a href="https://myip.mod.gov.my/" data-i18n="nav_home" target="_blank">Laman Utama</a></li>
                 @if(auth()->user()->type == 'admin')
                 <li class="[[NAV_ACTIVE_DIR]]" data-i18n="nav_directory"><a
                         href="@if (auth()->user()->type == 'admin') {{ '/pip/directory' }} @else {{ '#' }} @endif">DIREKTORI</a>
@@ -30,8 +30,7 @@
                 @endif
                 <li class="[[NAV_ACTIVE_ABOUT]]"><a href="https://myip.mod.gov.my/mengenai-portal" target='_blank' data-i18n="nav_about">Mengenai Portal</a>
                 </li>
-                <li class="[[NAV_ACTIVE_CONTACT]]"><a href="https://myip.mod.gov.my/hubungi-kami" target="_blank" data-i18n="nav_contact">HUBUNGI
-                        KAMI</a>
+                <li class="[[NAV_ACTIVE_CONTACT]]"><a href="https://myip.mod.gov.my/hubungi-kami" target="_blank" data-i18n="nav_contact">Hubungi Kami</a>
                 </li>
             </ul>
         </nav>
