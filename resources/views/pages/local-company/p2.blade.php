@@ -64,8 +64,7 @@
                                                 name="director_position" placeholder="Contoh: Pengarah">
                                         </div>
                                         <div class="col-md-6">
-                                                %< /label>
-                                            <label class="form-label" for="director_shareholding_pct">Pegangan Saham
+                                            <label class="form-label" for="director_shareholding_pct">Pegangan Saham  %</label>
                                             <input type="number" class="form-control" id="director_shareholding_pct"
                                                 name="director_shareholding_pct" min="1" max="100"
                                                 placeholder="1 - 100">
