@@ -25,12 +25,11 @@ class InstituteController extends Controller
     }
 
     public function postInstitute(){
-         $ins = Institute::createInstitute();
-        dd($ins);
+
         try {
             $user = User::where('email', request()->account_email)->first() ?? null;
             if(!$user){
-
+                 $ins = Institute::createInstitute();
                 if($ins){
                     \Mail::to($ins->user->email)
                     ->send(new ConfirmEmail($ins->user->id));
