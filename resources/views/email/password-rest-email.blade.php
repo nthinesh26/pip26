@@ -135,8 +135,10 @@
                                         team immediately.
                                     </p>
 
-
                                     <p style="margin:0 0 12px 0;">Thank you.</p>
+                                    <p style="margin:12px 0 0 0;">
+                                        <p> <img src="{{ $url }}/pip/assets/img/footer-logo-portal.png" /> </p>
+                                    </p>
                                 </div>
                             </td>
                         </tr>
