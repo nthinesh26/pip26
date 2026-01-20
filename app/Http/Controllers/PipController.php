@@ -40,7 +40,7 @@ class PipController extends Controller
         ]);
 
         if ($local && $update) {
-            session()->flash('message', "<script>Swal.fire({title: 'Maklumat Syarikat Tempatan berjaya dihantar. ', text: 'Maklumat Syarikat Tempatan berjaya dhantar. Sila semak e-mel untuk mengaktifkan akaun.', icon: 'success'});</script>");
+            session()->flash('message', "<script>Swal.fire({title: 'Maklumat Syarikat Tempatan berjaya dhantar. Sila semak e-mel untuk mengaktifkan akaun.', text: 'Maklumat Syarikat Tempatan berjaya dhantar. Sila semak e-mel untuk mengaktifkan akaun.', icon: 'success'});</script>");
             return redirect('/'); // need to redirect to final registration
         } else {
             session()->flash('message', "<script>Swal.fire({title: 'Ralat berlaku semasa pendaftaran. Sila semak maklumat dan hantar semula.', text: 'Pendaftaran belum lengkap. Sila hantar semula.', icon: 'warning'});</script>");

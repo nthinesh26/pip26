@@ -31,11 +31,11 @@
 
             <nav aria-label="Menu utama" class="pip-menu">
                 <ul>
-                    <li class="[[NAV_ACTIVE_HOME]]"><a href="[[HOME_URL]]" data-i18n="nav_home">LAMAN UTAMA</a></li>
+                    <li class="[[NAV_ACTIVE_HOME]]"><a href="https://myip.mod.gov.my/" data-i18n="nav_home">LAMAN UTAMA</a></li>
                     <li class="[[NAV_ACTIVE_DIR]]" style="display: none;"><a href="#" data-i18n="nav_directory">DIREKTORI</a>
                     </li>
-                    <li class="[[NAV_ACTIVE_ABOUT]]"><a href="[[ABOUT_URL]]" data-i18n="nav_about">MENGENAI PIP</a></li>
-                    <li class="[[NAV_ACTIVE_CONTACT]]"><a href="[[CONTACT_URL]]" data-i18n="nav_contact">HUBUNGI
+                    <li class="[[NAV_ACTIVE_ABOUT]]"><a href="https://myip.mod.gov.my/mengenai-portal" data-i18n="nav_about">MENGENAI PIP</a></li>
+                    <li class="[[NAV_ACTIVE_CONTACT]]"><a href="https://myip.mod.gov.my/hubungi-kami" data-i18n="nav_contact">HUBUNGI
                             KAMI</a></li>
                 </ul>
             </nav>
