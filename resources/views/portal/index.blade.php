@@ -72,7 +72,7 @@
                 <div class="pip-profile-body">
                     <div class="pip-profile-avatar">
                         <img alt="Logo Organisasi"
-                            @if ($flag) src="{{ auth()->user()->profile()->logo == 'not-submitted' ? '/pip/assets/img/userProfileBotak.png' : '/' . auth()->user()->profile()->logo }}" 
+                            @if ($flag) src="{{ auth()->user()->profile()->logo == 'not-submitted' ? '/pip/assets/img/userProfileBotak.png' : '' . auth()->user()->profile()->logo }}"
                             @else 
                                 src="/{{ $tag->profile()->logo }}" @endif />
                         @if ($flag)
