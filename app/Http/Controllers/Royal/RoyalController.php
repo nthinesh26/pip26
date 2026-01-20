@@ -39,7 +39,7 @@ class RoyalController extends Controller
             session()->flash('message', "<script>Swal.fire({title: 'Pendaftaran belum lengkap. Sila hantar semula.', text: '', icon: 'error'});</script>");
         }
 		}else{
-		session()->flash('message', "<script>Swal.fire({title: 'Emel yang dimasukkan sudah wujud dalam sistem', text: '', icon: 'error'});</script>");
+		session()->flash('message', "<script>Swal.fire({title: 'Emel yang dimasukkan sudah wujud dalam sistem.', text: '', icon: 'error'});</script>");
 		}
         return redirect('/pip/registration/royal');
     }

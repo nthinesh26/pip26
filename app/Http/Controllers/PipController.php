@@ -165,7 +165,7 @@ class PipController extends Controller
                     session()->flash('local_flash', null);
                 }
             } else {
-                session()->flash('message', "<script>Swal.fire({icon: 'error',title: 'Emel yang dimasukkan sudah wujud dalam sistem',text: '',footer: ''})</script>");
+                session()->flash('message', "<script>Swal.fire({icon: 'error',title: 'Emel yang dimasukkan sudah wujud dalam sistem.',text: '',footer: ''})</script>");
                 session()->flash('local_flash', null);
             }
         } catch (\Exception $e) {
