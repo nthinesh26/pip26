@@ -70,7 +70,7 @@
                              </svg>
                          </span>
                          <span class="pip-orgmeta-contact-text"><a
-                                 href="mailto:{{ $user->email }}">{{ $user->email }}</a></span>
+                                 href="{{ $user->company_website ?? '#' }}">{{ $user->company_website ?? 'not provided' }}</a></span>
                      </div>
 
 
