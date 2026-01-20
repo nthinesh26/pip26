@@ -83,7 +83,7 @@
                                         </div>
 
                                         <div class="pip-wc-field pip-wc-field--tempoh">
-                                            <div class="pip-wc-label" data-i18n="wishlist_priority">TEMPOH PROJEK</div>
+                                            <div class="pip-wc-label" data-i18n="wishlist_duration">TEMPOH PROJEK</div>
                                             <div class="pip-wc-value">{{ $wishilist->duration }}</div>
                                         </div>
                                     </div>
