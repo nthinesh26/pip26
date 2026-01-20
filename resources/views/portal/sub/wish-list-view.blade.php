@@ -63,6 +63,7 @@
                                 <div class="pip-wc-value">{{ $wh->duration }}</div>
                             </div>
                         </div>
+
                         <h4 class="pip-wc-subtitle" data-i18n="wishlist_desc_title">Penerangan Terperinci Projek</h4>
                         <div class="pip-wc-desc pb-3">
                             {!! $wh->description !!}

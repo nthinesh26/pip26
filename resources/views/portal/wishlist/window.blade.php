@@ -122,7 +122,7 @@
                                 </div>
 
                                 <div class="col-12 col-md-8">
-                                    <label class="form-label" for="tempoh_projek">Tempoh Projek <span
+                                    <label class="form-label" for="tempoh_projek">TEMPOH PROJEK <span
                                             class="text-danger">*</span></label>
                                     <textarea class="form-control" id="tempoh_projek" name="tempoh_projek" rows="3" required></textarea>
                                 </div>
