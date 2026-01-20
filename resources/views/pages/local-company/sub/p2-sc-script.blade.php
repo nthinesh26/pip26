@@ -12,7 +12,12 @@
 
         $("#btn_add_director").click(function(e) {
             let status = $("input[name='director_status']:checked").val();
-            let valid = $("input[name='director_status']").prop('checked');
+            let q0 = $("#director_status_awam").prop('checked');
+            let q1 = $("#director_status_pesara_awam").prop('checked');
+            let q2 = $("#director_status_pesara_tentera").prop('checked');
+            let valid = false;
+            if(q0 || q1 || q2)
+                valid = true;
             console.log(valid);
             if($("#director_name").val() != '' &&  $("#director_id_passport").val() != '' && $("#director_nationality").val() != '' && $("#director_position").val() != '' && $("#director_shareholding_pct").val() != '' && valid){
                 $.ajax({
