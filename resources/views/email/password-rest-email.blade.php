@@ -97,8 +97,6 @@
 
 
                                     <p style="margin:0 0 12px 0;">Terima kasih.</p>
-                                    <p style="margin:0; font-weight:700;">Pasukan Sokongan Portal Industri Pertahanan
-                                        (PIP)</p>
 
                                     <p style="margin:12px 0 0 0;">
                                         <p> <img src="{{ $url }}/pip/assets/img/footer-logo-portal.png" /> </p>
@@ -139,7 +137,6 @@
 
 
                                     <p style="margin:0 0 12px 0;">Thank you.</p>
-                                    <p style="margin:0; font-weight:700;">Defence Industry Portal (PIP) Support Team</p>
 
                                     <p style="margin:12px 0 0 0;">
                                         <p> <img src="{{ $url }}/pip/assets/img/footer-logo-portal.png" /> </p>
