@@ -82,8 +82,8 @@
                                      fill="currentColor"></path>
                              </svg>
                          </span>
-                         <span class="pip-orgmeta-contact-text"><a href="{{ $profile->company_website }}"
-                                 target="_blank">{{ $profile->company_website }}</a></span>
+                         <span class="pip-orgmeta-contact-text"><a href="{{ $profile->company_phonenumber }}"
+                                 target="_blank">{{ $profile->company_phonenumber }}</a></span>
                      </div>
                  </div>
              </div>

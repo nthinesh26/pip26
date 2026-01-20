@@ -29,7 +29,7 @@
   ].join(",");
 
   // Translate these attributes when present
-  const ATTRS_TO_TRANSLATE = ["placeholder", "title", "aria-label", "value"];
+  const ATTRS_TO_TRANSLATE = ["placeholder", "title", "aria-label"];
 
   // Keep original MS values for text nodes
   const ORIGINAL_TEXT = new WeakMap();
@@ -184,6 +184,7 @@
         if (/^[\d\s.,:/\-+()]+$/.test(v)) return;
 
         const storeKey = "data-i18n-orig-" + attr;
+        console.log(attr);
         if (!el.hasAttribute(storeKey)) el.setAttribute(storeKey, v);
 
         const origMS = el.getAttribute(storeKey) || v;
@@ -258,6 +259,7 @@
 
   function setLanguage(lang, opts) {
     const normalized = normalizeLang(lang);
+
     if (!opts?.noPersist) {
       try {
         localStorage.setItem(STORAGE_KEY, normalized);

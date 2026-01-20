@@ -25,12 +25,12 @@
   const kepakaranOthersText = document.getElementById("kepakaranOthersText");
 
   function syncKepakaranOthers() {
-    if (!kepakaranOthersCheckbox || !kepakaranOthersWrap || !kepakaranOthersText) return;
+    // if (!kepakaranOthersCheckbox || !kepakaranOthersWrap || !kepakaranOthersText) return;
 
-    const enabled = kepakaranOthersCheckbox.checked;
-    kepakaranOthersWrap.style.display = enabled ? "block" : "none";
-    kepakaranOthersText.required = enabled;
-    if (!enabled) kepakaranOthersText.value = "";
+    // const enabled = kepakaranOthersCheckbox.checked;
+    // kepakaranOthersWrap.style.display = enabled ? "block" : "none";
+    // kepakaranOthersText.required = enabled;
+    // if (!enabled) kepakaranOthersText.value = "";
   }
 
   if (kepakaranOthersCheckbox) {
