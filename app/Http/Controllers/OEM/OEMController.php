@@ -26,7 +26,7 @@ class OEMController extends Controller
                     session()->flash('message', "<script>Swal.fire({title: 'Pendaftaran belum lengkap. Sila hantar semula.', text: '', icon: 'error'});</script>");
                 }
             } else {
-                session()->flash('message', "<script>Swal.fire({title: 'Emel yang dimasukkan sudah wujud dalam sistem.', text: '', icon: 'error'});</script>");
+                session()->flash('message', "<script>Swal.fire({title: 'Alamat e-mel yang dimasukkan telah berdaftar dalam sistem.', text: '', icon: 'error'});</script>");
             }
         } catch (\Exception $ex) {
             session()->flash('message', "<script>Swal.fire({title: '".$ex->getMessage()."', text: 'Message from Server', icon: 'error'});</script>");

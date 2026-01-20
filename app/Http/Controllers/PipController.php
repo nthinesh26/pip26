@@ -9,7 +9,7 @@ use App\Mail\ConfirmEmail;
 use App\Models\LocalCompany;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-// local-com
+
 class PipController extends Controller
 {
 
@@ -165,7 +165,7 @@ class PipController extends Controller
                     session()->flash('local_flash', null);
                 }
             } else {
-                session()->flash('message', "<script>Swal.fire({icon: 'error',title: 'Emel yang dimasukkan sudah wujud dalam sistem.',text: '',footer: ''})</script>");
+                session()->flash('message', "<script>Swal.fire({icon: 'error',title: 'Alamat e-mel yang dimasukkan telah berdaftar dalam sistem.',text: '',footer: ''})</script>");
                 session()->flash('local_flash', null);
             }
         } catch (\Exception $e) {

@@ -40,7 +40,7 @@ class InstituteController extends Controller
             }
         }
         else{
-            session()->flash('message', "<script>Swal.fire({title: 'Emel yang dimasukkan sudah wujud dalam sistem.', text: '', icon: 'error'});</script>");
+            session()->flash('message', "<script>Swal.fire({title: 'Alamat e-mel yang dimasukkan telah berdaftar dalam sistem.', text: '', icon: 'error'});</script>");
         }
         return redirect('/pip/registration/institute');
     }
