@@ -8,7 +8,7 @@ use App\Http\Controllers\Royal\RoyalController;
 use App\Http\Controllers\Institute\InstituteController;
 
 Route::get('/pip/registration/local-company', [PipController::class, 'regLocalCom']);
-Route::get('/pip/accunt/active/{user_account}', [GeneralController::class, 'activateAccount']);
+Route::get('/pip/account/active/{user_account}', [GeneralController::class, 'activateAccount']);
 Route::get('/pip/registration/oem', [OEMController::class, 'index']);
 Route::get('/pip/registration/royal', [RoyalController::class, 'index']);
 Route::get('/pip/registration/institute', [InstituteController::class, 'index']);
