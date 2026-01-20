@@ -107,7 +107,7 @@
                                         hubungi kami</p>
 
                                     <p style="margin:0 0 12px 0;">Sekian, terima kasih.</p>
-                                    <p style="margin:0; font-weight:700;">Bahagian Industri Pertahanan (BIP)</p>
+
                                     <p> <img src="{{ $url }}/pip/assets/img/footer-logo-portal.png" /> </p>
                                 </div>
                             </td>

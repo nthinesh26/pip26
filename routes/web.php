@@ -12,6 +12,10 @@ Route::get('/logout', function () {
     return redirect('/');
 });
 
+Route::get('/metrics', function () {
+    return 1;
+})->middleware('metrics');
+
 Route::get('/test-mail', function () {
     try {
         \Mail::to('app@example.com')->send(new TestMail());
