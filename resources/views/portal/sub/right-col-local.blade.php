@@ -70,7 +70,7 @@
                              </svg>
                          </span>
                          <span class="pip-orgmeta-contact-text"><a
-                                 href="{{ $user->company_website ?? '#' }}" style="text-decoration: none">{{ $user->company_website ?? 'Not Submitted' }}</a></span>
+                                 href="{{ $profile->company_website ?? '#' }}" style="text-decoration: none">{{ $profile->company_website ?? 'Not Submitted' }}</a></span>
                      </div>
 
 

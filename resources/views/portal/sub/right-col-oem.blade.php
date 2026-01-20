@@ -74,7 +74,7 @@
                                      fill="currentColor"></path>
                              </svg>
                          </span>
-                         <span class="pip-orgmeta-contact-text">{{ $profile->company_website }}</span>
+                         <span class="pip-orgmeta-contact-text">{{ $profile->company_website ?? 'Not Submitted' }}</span>
                      </div>
                  </div>
              </div>

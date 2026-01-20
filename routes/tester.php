@@ -12,6 +12,10 @@ Route::get('/tester', function () {
     dd($exps);
 });
 
+Route::get('/gen/{id}', function($id){
+    echo '<a href="https://app-myip.boustead.com.my/pip/account/active/"' . WebTool::enc($id, 3) .'>LNK</a>';
+});
+
 Route::get('/send-email/{user}', function($user_id){
     $user = User::find($user_id) ?? null;
     $mail = \Mail::to($user->email)
