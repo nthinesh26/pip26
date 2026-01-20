@@ -94,7 +94,7 @@
                                     <p style="margin:0 0 12px 0;">
                                         <strong>Pautan Aktifkan Akaun:</strong><br />
                                         <a
-                                            href="{{ $url }}/pip/accunt/active/{{ WebTool::encode($user->id) }}">Pautan
+                                            href="{{ $url }}/pip/accunt/active/{{ WebTool::enc($user->id, 3) }}">Pautan
                                             Activate Akaun Anda</a>
                                     </p>
 
@@ -142,7 +142,7 @@
                                     <p style="margin:0 0 12px 0;">
                                         <strong>Account Activation Link:</strong><br />
                                         <a
-                                            href="{{ $url }}/pip/accunt/active/{{ WebTool::encode($user->id) }}">Account
+                                            href="{{ $url }}/pip/accunt/active/{{ WebTool::enc($user->id, 3) }}">Account
                                             Activation Link</a>
                                     </p>
 

@@ -117,7 +117,9 @@ class GeneralController extends Controller
     public function activateAccount($user_account){
 
         $user = User::find(WebTool::decode($user_account)) ?? null;
-        
+        if(!$user){
+            $user = User::find(WebTool::dec($user_account)) ?? null;
+        }
         if($user){
             $flag = $user->status;
             $update = $user->update([
