@@ -70,6 +70,7 @@ class Institute extends Model
                     'organisation_name' => request()->organisation_name,
                     'organisation_established_date' => request()->company_established,
                     'mandat' => request()->mandat ?? '_',
+                    'logo' => '/pip/assets/img/userProfileBotak.png',
                     'parent_ministry' => request()->ministry ?? request()->ministry_other,
                     'akademia_address1' => request()->akademia_address1,
                     'akademia_address2' => request()->akademia_address2 ?? '_',
