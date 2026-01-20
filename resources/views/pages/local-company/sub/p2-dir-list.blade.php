@@ -19,8 +19,8 @@
                         <td>{{ $director->proof_id }}</td>
                         <td>{{ $director->citizen }}</td>
                         <td>{{ $director->position }}</td>
-                        <td>{{ $director->shares }}</td>
                         <td>{{ $director->shares }}%</td>
+                        <td>{{ $director->status }}</td>
                         <th><a href="javascript:void(0)" class="remove-dirs"
                                 data-dir="{{ WebTool::enc($director->id) }}">Buang</a></th>
                     </tr>
