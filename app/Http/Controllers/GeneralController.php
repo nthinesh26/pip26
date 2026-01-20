@@ -115,6 +115,7 @@ class GeneralController extends Controller
     }
 
     public function activateAccount($user_account){
+
         if(is_numeric($user_account))
             $user = User::find(WebTool::decode($user_account)) ?? null;
         if(!$user){
