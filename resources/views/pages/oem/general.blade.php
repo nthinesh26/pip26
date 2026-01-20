@@ -23,7 +23,7 @@
 
                         <div class="row g-3">
                             <div class="col-12 col-md-6">
-                                <label class="form-label" for="account_full_name">Nama Penuh Akaun</label>
+                                <label class="form-label" for="account_full_name">Nama Penuh Akaun<span class="pip-required">*</span></label>
                                 <input class="form-control" id="account_full_name" name="account_full_name"
                                     placeholder="Ali Bin Abu" type="text" required  />
                             </div>
