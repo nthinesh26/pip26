@@ -156,7 +156,6 @@
 
 
                                     <p style="margin:0 0 12px 0;">Thank you.</p>
-                                    <p style="margin:0; font-weight:700;">Defence Industry Division (DID)</p>
                                     <p> <img src="{{ $url }}/pip/assets/img/footer-logo-portal.png" /> </p>
                                 </div>
                             </td>
