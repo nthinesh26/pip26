@@ -13,7 +13,7 @@
         $("#btn_add_director").click(function(e) {
             let status = $("input[name='director_status']:checked").val();
             let valid = $("input[name='director_status']").prop('checked');
-
+            console.log(valid);
             if($("#director_name").val() != '' &&  $("#director_id_passport").val() != '' && $("#director_nationality").val() != '' && $("#director_position").val() != '' && $("#director_shareholding_pct").val() != '' && valid){
                 $.ajax({
                     type: 'POST',
