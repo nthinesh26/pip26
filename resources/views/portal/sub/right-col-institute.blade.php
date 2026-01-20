@@ -49,7 +49,7 @@
                                      fill="currentColor"></path>
                              </svg>
                          </span>
-                         <span class="pip-orgmeta-contact-text">{{ $profile->organisation_website }}</span>
+                         <span class="pip-orgmeta-contact-text">{{ $profile->organisation_website ?? 'Not Available' }}</span>
                      </div>
 
 
