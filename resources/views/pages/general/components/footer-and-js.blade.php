@@ -1,18 +1,15 @@
-<footer class="pip-footer">
-    <div class="container pip-footer-inner">
-        @include('pip.fl')
-        <a href="https://myip.mod.gov.my/polisi-privasi" target="_blank">
-            <h3 class="pip-footer-link">POLISI PRIVASI</h3>
-        </a>
-        <a href="https://myip.mod.gov.my/terma-pengunaan" target="_blank">
-            <h3 class="pip-footer-link">TERMA PENGUNAAN</h3>
-        </a>
-        <a href="https://myip.mod.gov.my/hubungi-kami" target="_blank">
-            <h3 class="pip-footer-link">HUBUNGI KAMI</h3>
-        </a>
-    </div>
-    <div class="pip-footer-bar"></div>
-</footer>
+<footer aria-label="Footer" class="pip-footer pip-footer--mock">
+        <div class="pip-footer-inner pip-footer-inner--mock">
+            <div class="pip-footer-brand">
+                @include('pip.fl')
+            </div>
+            <div class="pip-footer-links">
+                <a class="pip-footer-link" href="https://myip.mod.gov.my/polisi-privasi"><span data-i18n="footer_privacy">POLISI PRIVASI</span></a>
+                <a class="pip-footer-link" href="javascript:void(0)"><span data-i18n="footer_terms">TERMA PENGGUNAAN</span></a>
+                <a class="pip-footer-link" href="https://myip.mod.gov.my/hubungi-kami" target="_blank" data-i18n="nav_contact">HUBUNGI KAMI</a>
+            </div>
+        </div>
+    </footer>
 
 
 {{-- @include('pages.general.components.js-inject') --}}

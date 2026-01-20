@@ -39,11 +39,11 @@
             @include('pip.logo')
 
             <nav class="pip-menu" aria-label="Menu utama">
-                <ul>
-                    <li><a href="#" data-i18n="nav_home">LAMAN UTAMA</a></li>
-                    <li><a href="#" data-i18n="nav_about">MENGENAI PIP</a></li>
-                    <li><a href="#" data-i18n="nav_contact">HUBUNGI KAMI</a></li>
-                </ul>
+                  <ul>
+                <li><a href="https://myip.mod.gov.my" target="_blank">Laman Utama</a></li>
+                <li><a href="https://myip.mod.gov.my/mengenai-portal">Mengenai Portal</a></li>
+                <li><a href="https://myip.mod.gov.my/hubungi-kami" target="_blank">Hubungi Kami</a></li>
+            </ul>
             </nav>
 
             <div class="pip-actions">
@@ -98,20 +98,17 @@
         </section>
     </main>
 
-    <footer class="pip-footer">
-        <div class="container pip-footer-inner">
-            @include('pip.fl')
-            <a href="#">
-                <h3 class="pip-footer-link" data-i18n="footer_privacy">POLISI PRIVASI</h3>
-            </a>
-            <a href="#">
-                <h3 class="pip-footer-link" data-i18n="footer_terms">TERMA PENGGUNAAN</h3>
-            </a>
-            <a href="#">
-                <h3 class="pip-footer-link" data-i18n="footer_contact">HUBUNGI KAMI</h3>
-            </a>
+    <footer aria-label="Footer" class="pip-footer pip-footer--mock">
+        <div class="pip-footer-inner pip-footer-inner--mock">
+            <div class="pip-footer-brand">
+                @include('pip.fl')
+            </div>
+            <div class="pip-footer-links">
+                <a class="pip-footer-link" href="https://myip.mod.gov.my/polisi-privasi"><span data-i18n="footer_privacy">POLISI PRIVASI</span></a>
+                <a class="pip-footer-link" href="javascript:void(0)"><span data-i18n="footer_terms">TERMA PENGGUNAAN</span></a>
+                <a class="pip-footer-link" href="https://myip.mod.gov.my/hubungi-kami" target="_blank" data-i18n="nav_contact">HUBUNGI KAMI</a>
+            </div>
         </div>
-        <div class="pip-footer-bar"></div>
     </footer>
 
     <script defer src="/pip/assets/js/pip-i18n.js"></script>

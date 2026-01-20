@@ -28,9 +28,9 @@
 
             <nav class="pip-menu" aria-label="Menu utama">
                 <ul>
-                    <li><a href="#">Laman Utama</a></li>
-                    <li><a href="#">Mengenai PIP</a></li>
-                    <li><a href="#">Hubungi Kami</a></li>
+                    <li><a href="https://myip.mod.gov.my" target="_blank">Laman Utama</a></li>
+                    <li><a href="https://myip.mod.gov.my/mengenai-portal">Mengenai Portal</a></li>
+                    <li><a href="https://myip.mod.gov.my/hubungi-kami" target="_blank">Hubungi Kami</a></li>
                 </ul>
             </nav>
 
@@ -101,15 +101,9 @@
     <footer class="pip-footer">
         <div class="container pip-footer-inner">
             @include('pip.fl')
-            <a href="#">
-                <h3 class="pip-footer-link">POLISI PRIVASI</h3>
-            </a>
-            <a href="#">
-                <h3 class="pip-footer-link">TERMA PENGUNAAN</h3>
-            </a>
-            <a href="#">
-                <h3 class="pip-footer-link">HUBUNGI KAMI</h3>
-            </a>
+            <a class="pip-footer-link" href="https://myip.mod.gov.my/polisi-privasi"><span data-i18n="footer_privacy">POLISI PRIVASI</span></a>
+            <a class="pip-footer-link" href="javascript:void(0)"><span data-i18n="footer_terms">TERMA PENGGUNAAN</span></a>
+            <a class="pip-footer-link" href="https://myip.mod.gov.my/hubungi-kami" target="_blank" data-i18n="nav_contact">HUBUNGI KAMI</a>
         </div>
         <div class="pip-footer-bar"></div>
     </footer>
