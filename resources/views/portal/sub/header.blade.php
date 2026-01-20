@@ -17,6 +17,7 @@
         display: inline-block;
     }
 </style>
+
 <header class="pip-navbar">
     <div class="pip-navbar-inner pip-navbar-inner--wide">
         @include('pip.logo')
