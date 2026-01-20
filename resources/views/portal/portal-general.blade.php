@@ -64,7 +64,7 @@
             <div class="pip-footer-links">
                 <a class="pip-footer-link" href="https://myip.mod.gov.my/polisi-privasi"><span data-i18n="footer_privacy">POLISI
                         PRIVASI</span></a>
-                <a class="pip-footer-link" href="[[TERMS_URL]]"><span data-i18n="footer_terms">TERMA
+                <a class="pip-footer-link" href="#"><span data-i18n="footer_terms">TERMA
                         PENGGUNAAN</span></a>
                 <a class="pip-footer-link" href="https://myip.mod.gov.my/hubungi-kami"><span data-i18n="footer_contact">HUBUNGI
                         KAMI</span></a>
