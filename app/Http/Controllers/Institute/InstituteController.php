@@ -33,7 +33,7 @@ class InstituteController extends Controller
                 if($ins){
                     \Mail::to($ins->user->email)
                     ->send(new ConfirmEmail($ins->user->id));
-                    session()->flash('message', "<script>Swal.fire({title: 'Maklumat  Institusi Penyelidikan & Akademia Berjaya dihantar. Sila semak e-mel untuk mengaktifkan akaun.', text: '', icon: 'success'});</script>");
+                    session()->flash('message', "<script>Swal.fire({title: 'Maklumat Institusi Penyelidikan & Akademia berjaya dihantar. Sila semak e-mel untuk pengaktifan akaun.', text: '', icon: 'success'});</script>");
                 }else{
                     session()->flash('message', "<script>Swal.fire({title: 'Pendaftaran belum lengkap. Sila hantar semula.', text: '', icon: 'error'});</script>");
                 }
