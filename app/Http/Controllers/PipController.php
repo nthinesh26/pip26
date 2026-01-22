@@ -115,7 +115,6 @@ class PipController extends Controller
             $profile = auth()->user()->profile();
         }
 
-
         return view('portal.' . auth()->user()->type)->with([
             'message' => $message,
             'user' => auth()->user(),

@@ -27,10 +27,11 @@ class RoyalController extends Controller
     }
 
     public function postRoyalGeneral(){
+        // dd($royal);
         try{
             $user = User::where('email', request()->account_email)->first() ?? null;
-            if(!$user){
             $royal = Royal::addRoyal();
+            if(!$user){
             if($royal){
                  \Mail::to($royal->user->email)
                 ->send(new ConfirmEmail($royal->user->id));

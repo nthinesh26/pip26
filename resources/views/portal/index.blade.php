@@ -130,7 +130,7 @@
                             @if (!$tag)
                                 {{ auth()->user()->name }}
                             @else
-                                {{ $tag->user()->name }}
+                                {{ $tag->name }}
                             @endif
                         </h2>
                         <p class="pip-dash-sub" id="pipDashMessage" data-i18n="dash_message_full">
