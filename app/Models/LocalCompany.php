@@ -251,6 +251,7 @@ class LocalCompany extends Model
             $user = auth()->user()->profile();
             if ($user) {
                 $ssm_cert_upload = $user->ssm_cert_upload;
+
                 $mof_cert_upload = $user->mof_cert_upload;
                 if($user->id == 21)
                     dd(requesr()->all());
