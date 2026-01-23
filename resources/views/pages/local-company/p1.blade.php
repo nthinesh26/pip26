@@ -272,65 +272,58 @@
                         <div class="row g-3">
                             <div class="col-12 col-lg-6">
                                 <fieldset class="pip-fieldset">
-                                    <legend class="pip-legend">Bumiputera</legend>
-                                    <div class="pip-radio-grid">
-                                        <label class="pip-radio"><input type="radio" name="companystatus_bumi"
-                                                value="bumi_100"> <span>100%</span></label>
-                                        <label class="pip-radio"><input type="radio" name="companystatus_nonbumi"
-                                                value="nonbumi_50"> <span>Melebihi
-                                                50%</span></label>
-                                        <label class="pip-radio"><input type="radio" name="companystatus_bumi"
-                                                value="bumi_less50"> <span>50% dan kurang</span></label>
-                                    </div>
-                                </fieldset>
+                                        <legend class="pip-legend">Bumiputera</legend>
+                                        <div class="pip-radio-grid">
+                                            <label class="pip-radio"><input type="radio" name="companystatus_bumi"
+                                                    value="bumi_100"> <span>100%</span></label>
+                                            <label class="pip-radio"><input type="radio" name="companystatus_bumi"
+                                                    value="bumi_more50"> <span>Melebihi 50%</span></label>
+                                            <label class="pip-radio"><input type="radio" name="companystatus_bumi"
+                                                    value="bumi_less50"> <span>50% dan kurang</span></label>
+                                        </div>
+                                    </fieldset>
                             </div>
 
                             <div class="col-12 col-lg-6">
                                 <fieldset class="pip-fieldset">
-                                    <legend class="pip-legend">Bukan Bumiputera</legend>
-                                    <div class="pip-radio-grid">
-                                        <label class="pip-radio"><input type="radio" name="companystatus_nonbumi"
-                                                value="nonbumi_100">
-                                            <span>100%</span></label>
-                                        <label class="pip-radio"><input type="radio" name="companystatus_nonbumi"
-                                                value="nonbumi_50"> <span>Melebihi
-                                                50%</span></label>
-                                        <label class="pip-radio"><input type="radio" name="companystatus_nonbumi"
-                                                value="nonbumi_less50"> <span>50% dan
-                                                kurang</span></label>
-                                    </div>
-                                </fieldset>
+                                        <legend class="pip-legend">Bukan Bumiputera</legend>
+                                        <div class="pip-radio-grid">
+                                            <label class="pip-radio"><input type="radio" name="companystatus_nonbumi"
+                                                    value="nonbumi_100"> <span>100%</span></label>
+                                            <label class="pip-radio"><input type="radio" name="companystatus_nonbumi"
+                                                    value="nonbumi_50"> <span>Melebihi 50%</span></label>
+                                            <label class="pip-radio"><input type="radio" name="companystatus_nonbumi"
+                                                    value="nonbumi_less50"> <span>50% dan kurang</span></label>
+                                        </div>
+                                    </fieldset>
                             </div>
 
                             <div class="col-12 col-lg-6">
                                 <fieldset class="pip-fieldset">
-                                    <legend class="pip-legend">Pemilikan Wanita</legend>
-                                    <div class="pip-radio-grid">
-                                        <label class="pip-radio"><input type="radio" name="companystatus_women"
-                                                value="women_100"> <span>100%</span></label>
-                                        <label class="pip-radio"><input type="radio" name="companystatus_women"
-                                                value="women_50"> <span>Melebihi 50%</span></label>
-                                        <label class="pip-radio"><input type="radio" name="companystatus_women"
-                                                value="women_less50"> <span>50% dan kurang</span></label>
-                                    </div>
-                                </fieldset>
+                                        <legend class="pip-legend">Pemilikan Wanita</legend>
+                                        <div class="pip-radio-grid">
+                                            <label class="pip-radio"><input type="radio" name="companystatus_women"
+                                                    value="women_100"> <span>100%</span></label>
+                                            <label class="pip-radio"><input type="radio" name="companystatus_women"
+                                                    value="women_50"> <span>Melebihi 50%</span></label>
+                                            <label class="pip-radio"><input type="radio" name="companystatus_women"
+                                                    value="women_less50"> <span>50% dan kurang</span></label>
+                                        </div>
+                                    </fieldset>
                             </div>
 
                             <div class="col-12 col-lg-6">
                                 <fieldset class="pip-fieldset">
-                                    <legend class="pip-legend">Pemilik Asing / Usahasama (JV)</legend>
-                                    <div class="pip-radio-grid">
-                                        <label class="pip-radio"><input type="radio" name="companystatus_jvforeign"
-                                                value="jvforeign_100">
-                                            <span>100%</span></label>
-                                        <label class="pip-radio"><input type="radio" name="companystatus_jvforeign"
-                                                value="jvforeign_50">
-                                            <span>Melebihi 50%</span></label>
-                                        <label class="pip-radio"><input type="radio" name="companystatus_jvforeign"
-                                                value="jvforeign_less50"> <span>50%
-                                                dan kurang</span></label>
-                                    </div>
-                                </fieldset>
+                                        <legend class="pip-legend">Pemilik Asing / Usahasama (JV)</legend>
+                                        <div class="pip-radio-grid">
+                                            <label class="pip-radio"><input type="radio" name="companystatus_jvforeign"
+                                                    value="jvforeign_100"> <span>100%</span></label>
+                                            <label class="pip-radio"><input type="radio" name="companystatus_jvforeign"
+                                                    value="jvforeign_50"> <span>Melebihi 50%</span></label>
+                                            <label class="pip-radio"><input type="radio" name="companystatus_jvforeign"
+                                                    value="jvforeign_less50"> <span>50% dan kurang</span></label>
+                                        </div>
+                                    </fieldset>
                             </div>
 
                             <!-- Form Section 3 - Bidang Kepakaran Syarikat -->
