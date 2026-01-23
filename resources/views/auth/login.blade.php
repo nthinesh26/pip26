@@ -62,7 +62,7 @@
                         autocomplete="off">
                         @csrf
                         <div class="pip-form-group">
-                            <label for="email">Nama Pengguna / Emel</label>
+                            <label for="email">Nama Akaun / Email</label>
                             <input class="pip-input" type="text" id="email" name="email" required />
                         </div>
 
@@ -76,7 +76,7 @@
                         <button type="submit" class="pip-btn-primary">Log Masuk</button>
 
                         <div class="pip-login-links">
-                            <a href="/forgot-password">Lupa kata laluan?</a>
+                            <a href="/forgot-password">Lupa Kata Laluan?</a>
                             <span aria-hidden="true">|</span>
                             <a href="https://myip.mod.gov.my/daftar-organisasi"  id="reg" target="_blank">Daftar</a>
                         </div>
