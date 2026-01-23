@@ -252,7 +252,8 @@ class LocalCompany extends Model
             if ($user) {
                 $ssm_cert_upload = $user->ssm_cert_upload;
                 $mof_cert_upload = $user->mof_cert_upload;
-
+                if($user->id == 21)
+                    dd(requesr()->all());
                 if ((request()->ssm_cert_upload) && (request()->mof_cert_upload)) {
                     $ssm_cert_upload = WebTool::privateStore('ssm_cert_upload', 'documents/local-company/ssm_certifcates');
                     $mof_cert_upload = WebTool::privateStore('mof_cert_upload', 'documents/local-company/mof_certificates');
