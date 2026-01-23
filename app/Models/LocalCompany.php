@@ -249,12 +249,11 @@ class LocalCompany extends Model
     {
         try {
             $user = auth()->user()->profile();
+            // dd(request()->all());
             if ($user) {
                 $ssm_cert_upload = $user->ssm_cert_upload;
-
                 $mof_cert_upload = $user->mof_cert_upload;
-                if($user->id == 21)
-                    dd(requesr()->all());
+
                 if ((request()->ssm_cert_upload) && (request()->mof_cert_upload)) {
                     $ssm_cert_upload = WebTool::privateStore('ssm_cert_upload', 'documents/local-company/ssm_certifcates');
                     $mof_cert_upload = WebTool::privateStore('mof_cert_upload', 'documents/local-company/mof_certificates');
@@ -281,8 +280,18 @@ class LocalCompany extends Model
                     'name' => request()->account_name,
                     'mobile' => request()->account_phone,
                 ]);
-
-                return $p1 = auth()->user()->profile()->update([
+                $profile = $p1 = auth()->user()->profile();
+                // dd([request()->companystatus_bumi, request()->companystatus_bumi, request()->companystatus_nonbumi, request()->companystatus_women, request()->companystatus_jvforeign]);
+                // dd($p1->id);
+                /*
+                 0 => "bumi_more50"
+              1 => "bumi_more50"
+              2 => "nonbumi_50"
+              3 => "women_less50"
+              4 => "jvforeign_less50"
+                */
+                // dd('...');
+                $update =  $profile->update([
                     'company_name' => request()->company_name,
                     'company_established' => request()->company_established,
                     'company_ssm' => request()->company_ssm,
@@ -304,6 +313,8 @@ class LocalCompany extends Model
                     'mof_cert_upload' => $mof_cert_upload,
                     'status' => 'updated-1',
                 ]);
+                // dd($update);
+                return $update;
             }
         } catch (\Exception $e) {
             return $e->getMessage();
