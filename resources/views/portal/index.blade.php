@@ -26,7 +26,7 @@
             $user = $tag;
 
             $profile = $user->profile();
-            dd($profile);
+            die(var_dump($profile));
             $address = '';
             if ($user->type == 'local') {
                 $txt = json_decode($profile->company_address);
