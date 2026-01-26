@@ -91,27 +91,27 @@
                                     <!-- Expanded sections -->
                                     <h4 class="pip-wc-subtitle" data-i18n="wishlist_desc_title">Penerangan Terperinci Projek</h4>
                                     <div class="pip-wc-desc">
-                                        {!! $wishilist->description !!}
+                                        {{ $wishilist->description }}
                                     </div>
 
                                     <h4 class="pip-wc-subtitle" data-i18n="wishlist_tasks_title">Tugas dan Pencapaian Utama</h4>
                                     <div class="pip-wc-desc">
-                                        {!! $wishilist->tasks !!}
+                                       {{ $wishilist->tasks }}
                                     </div>
 
                                     <h4 class="pip-wc-subtitle" data-i18n="wishlist_target_title">Sasaran</h4>
                                     <div class="pip-wc-desc">
-                                        {!! $wishilist->target !!}
+                                        {{ $wishilist->target }}
                                     </div>
 
                                     <h4 class="pip-wc-subtitle" data-i18n="wishlist_output_title">Hasil Projek</h4>
                                     <div class="pip-wc-desc">
-                                        {!! $wishilist->results !!}
+                                        {{ $wishilist->results }}
                                     </div>
 
                                     <h4 class="pip-wc-subtitle" data-i18n="wishlist_impact_title">Kesan dan Manfaat Projek kepada Malaysia</h4>
                                     <div class="pip-wc-desc">
-                                        {!! $wishilist->benefits !!}
+                                        {{ $wishilist->benefits }}
                                     </div>
                                 </div>
                             </div>

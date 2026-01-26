@@ -80,7 +80,7 @@
 
                                 <p class="mt-2 mb-2" style="font-size:0.95rem;">
                                     @if ($desc != '_')
-                                        {!! $profile->$desc !!}
+                                        {{ $profile->$desc }}
                                     @endif
                                 </p>
 
