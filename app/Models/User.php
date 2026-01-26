@@ -131,7 +131,7 @@ class User extends Authenticatable
         ];
         if($this->type == 'institute'){
             $org = json_decode($this->profile()->org_desciption);
-            dd($org);
+            dd($org->type);
             return $org->type;
         }else{
             return $type[$this->type];
