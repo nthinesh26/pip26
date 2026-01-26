@@ -17,11 +17,13 @@
                 }
                 // dd(auth()->user()->profile()->exps);
             @endphp
-            @if (auth()->user()->profile()->exps != 'null' && auth()->user()->profile()->exps)
+
+            @if ($user->profile()->exps != 'null' && $user->profile()->exps)
                 @foreach (json_decode($profile->exps) as $exp)
                     <div class="pip-pill">{{ $exp }}</div>
                 @endforeach
             @endif
+
             <!-- It is possible to have multiple tags, backend can render more pills here -->
             <!--  -->
         </div>
