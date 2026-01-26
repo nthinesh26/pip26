@@ -35,6 +35,7 @@
                                 $col_name = $user->companyName();
                                 $type = $col_type = $user->displayType();
                                 $desc = $user->desc();
+                                $desc_render = $user->desc_render();
 
                             @endphp
                             @php
