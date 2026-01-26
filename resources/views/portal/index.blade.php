@@ -24,9 +24,9 @@
                 $state = $profile->fetchAddress()['state'];
             }
         } else {
-            // $user = $tag;
             // dd($user);
             $profile = $user->profile();
+            // $user = $tag;
 
             $address = '';
             if ($user->type == 'local') {
@@ -80,7 +80,7 @@
                         <img alt="Logo Organisasi"
                             @if ($flag) src="{{ auth()->user()->profile()->logo == 'not-submitted' ? '/pip/assets/img/userProfileBotak.png' : '' . auth()->user()->profile()->logo }}"
                             @else 
-                                src="/{{ $tag->profile()->logo }}" @endif />
+                                src="/{{ $user->profile()->logo }}" @endif />
                         @if ($flag)
                             <button class="pip-avatar-edit pip-avatar-edit--overlay" id="pipAvatarEditBtn"
                                 type="button" aria-label="Edit Profile" data-i18n-aria="avatar_edit">
@@ -95,7 +95,7 @@
                                 @if ($flag)
                                     <h1 class="pip-profile-name">{{ auth()->user()->profile()->$com }}</h1>
                                 @else
-                                    <h1 class="pip-profile-name">{{ $tag->profile()->$com }}</h1>
+                                    <h1 class="pip-profile-name">{{ $user->profile()->$com }}</h1>
                                 @endif
                                 <!-- TERHAD and RAKAN IP badge -->
                                 <span class="pip-profile-badge" data-badge="terhad" data-i18n="badge_basic">MAKLUMAT
