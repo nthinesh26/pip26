@@ -114,6 +114,8 @@ class PipController extends Controller
         } else {
             $profile = auth()->user()->profile();
         }
+        if(auth()->user()->type == 'admin')
+            return redirect('/pip/directory');
 
         return view('portal.' . auth()->user()->type)->with([
             'message' => $message,

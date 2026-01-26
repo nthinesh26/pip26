@@ -108,7 +108,11 @@ integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJ
             @if (!\Auth::check())
                 <a href="/login" class="pip-login" target="_blank" rel="noopener">Log Masuk</a>
             @else
+                @if(auth()->user()->type == 'admin')
+                <a href="/logout" class="pip-login" rel="noopener">Logout</a>
+                @else
                 <a href="/" class="pip-login" rel="noopener">Portal</a>
+                @endif
             @endif
         </div>
     </div>

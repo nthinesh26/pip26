@@ -91,7 +91,7 @@ class User extends Authenticatable
             'institute' => $this->instiute,
             'royal' => $this->royal,
             'staff' => $this,
-            defualt => null,
+            'admin' =>  $this->admin,
         };
     }
 
