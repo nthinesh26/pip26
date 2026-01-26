@@ -2,7 +2,7 @@
     <div class="row g-4">
         @php
             if (isset($type)) {
-                $users = User::whereIn('type', $type)->where('status', 'active')->get();
+                $users = User::whereIn('type', $type)->where('status', '<>', 'del')->get();
             } else {
                 $users = User::whereIn('type', ['local', 'royal', 'institute', 'oem'])
                     ->where('status', 'active')

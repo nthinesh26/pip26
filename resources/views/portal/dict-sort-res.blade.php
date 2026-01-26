@@ -2,7 +2,7 @@
 
     $q1 = DB::table('local_companies as t1')
         ->join('users as u', 'u.id', '=', 't1.user_id')
-        ->where('u.status', 'active')
+        ->where('u.status', '<>', 'del')
         ->whereIn('u.type', $types)
         ->select(
             't1.company_name as name',
@@ -13,19 +13,19 @@
 
     $q2 = DB::table('royals as t2')
         ->join('users as u', 'u.id', '=', 't2.user_id')
-        ->where('u.status', 'active')
+        ->where('u.status', '<>', 'del')
         ->whereIn('u.type', $types)
         ->select('t2.agensi_name as name', 'u.id as user_id', 'u.type as user_type', DB::raw("'royals' as source"));
 
     $q3 = DB::table('o_e_m_s as t3')
         ->join('users as u', 'u.id', '=', 't3.user_id')
-        ->where('u.status', 'active')
+        ->where('u.status', '<>', 'del')
         ->whereIn('u.type', $types)
         ->select('t3.company_name as name', 'u.id as user_id', 'u.type as user_type', DB::raw("'o_e_m_s' as source"));
 
     $q4 = DB::table('institutes as t4')
         ->join('users as u', 'u.id', '=', 't4.user_id')
-        ->where('u.status', 'active')
+        ->where('u.status', '<>', 'del')
         ->whereIn('u.type', $types)
         ->select(
             't4.organisation_name as name',
