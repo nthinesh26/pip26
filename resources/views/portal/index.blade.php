@@ -62,7 +62,11 @@
     @include('portal.sub.header')
     <main class="pip-profile-page">
         @php
-            $com = auth()->user()->companyName();
+            if($flag)
+                $com = auth()->user()->companyName();
+            else
+                $com = $tag->companyName();
+
         @endphp
         <section aria-label="Banner organisasi" class="pip-profile-banner-wrap">
             <div aria-label="Banner organisasi" class="pip-profile-banner" role="img"
