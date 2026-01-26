@@ -16,6 +16,7 @@ class PipController extends Controller
     public function viewAsVisitor($user_id)
     {
         $user = User::find(WebTool::decode($user_id)) ?? null;
+        dd($user);
         if ($user) {
             return $this->index($user->id);
         }
