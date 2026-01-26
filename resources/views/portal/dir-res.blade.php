@@ -5,7 +5,7 @@
                 $users = User::whereIn('type', $type)->where('status', '<>', 'del')->get();
             } else {
                 $users = User::whereIn('type', ['local', 'royal', 'institute', 'oem'])
-                    ->where('status', '<>' 'del')
+                    ->where('status', '<>', 'del')
                     ->get();
             }
         @endphp
