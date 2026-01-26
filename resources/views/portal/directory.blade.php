@@ -20,12 +20,11 @@
                     <div class="col-6 col-md-3 col-lg-6">
                         <label class="form-label mb-1" data-i18n="dir_filter_category">Kategori</label>
                         <select class="form-select" name="kategori_entiti" id="kategori_entiti">
-                            <option selected="all" value="all" data-i18n="dir_opt_all">Semua</option>
+                            <option selected="" value="" data-i18n="dir_opt_all">Semua</option>
                             <option value="Syarikat Tempatan" data-i18n="dir_opt_local">Syarikat Tempatan</option>
-                            <option value="royal" data-i18n="dir_opt_agency">Agensi Kerajaan</option>
-                            <option value="institute" data-i18n="dir_opt_academia">Institusi Penyelidikan & Akademia
-                            </option>
-                            <option value="oem" data-i18n="dir_opt_oem">OEM</option>
+                            <option value="Agensi" data-i18n="dir_opt_agency">Agensi Kerajaan</option>
+                            <option value="Penyelidikan and Akademia" data-i18n="dir_opt_academia">Institusi Penyelidikan & Akademia</option>
+                            <option value="OEM" data-i18n="dir_opt_oem">OEM</option>
                         </select>
                         @if (session('category'))
                             <script>
