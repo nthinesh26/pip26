@@ -132,7 +132,7 @@ class User extends Authenticatable
         if($this->type == 'institute'){
             $org = json_decode($this->profile()->org_desciption);
             // echo $org->type;
-            return $org->type;
+            return ucwords($org->type);
         }else{
             $act = $type[$this->type];
             return $this->profile()->$act;
