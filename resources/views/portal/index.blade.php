@@ -65,7 +65,7 @@
             if($flag)
                 $com = auth()->user()->companyName();
             else
-                $com = $tag->companyName();
+                $com = $user->companyName();
 
         @endphp
         <section aria-label="Banner organisasi" class="pip-profile-banner-wrap">
