@@ -120,4 +120,20 @@ class User extends Authenticatable
         ];
         return $type[$this->type];
     }
+
+    public  function desc_render()
+    {
+        $type =  [
+            'local' => 'nyatakan_kepakaran',
+            'oem' => '_',
+            'royal' => '_',
+            'institute' => 'org_desciption',
+        ];
+        if($this->type == 'institute'){
+            $org = json_decode($this->profile()->org_desciption);
+            return $org->type;
+        }else{
+            return $type[$this->type];
+        }
+    }
 }
