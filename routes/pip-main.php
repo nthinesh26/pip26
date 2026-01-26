@@ -13,6 +13,11 @@ Route::get('/pip/registration/oem', [OEMController::class, 'index']);
 Route::get('/pip/registration/royal', [RoyalController::class, 'index']);
 Route::get('/pip/registration/institute', [InstituteController::class, 'index']);
 
+Route::get('/pip/directory', [DirectoryController::class, 'index'])->name('directory');
+Route::get('/pip/directory/list/{type}', [DirectoryController::class, 'filterByCtg']);
+
+Route::post('/pip/dict/sorting', [DirectoryController::class, 'dictSorting']);
+
 Route::post('/pip/registration/ins-registration', [InstituteController::class, 'postInstitute']);
 Route::post('/pip/registration/royal-registration', [RoyalController::class, 'postRoyalGeneral']);
 Route::post('/pip/general/registration', [PipController::class, 'submitLocalComDetails']);
