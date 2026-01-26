@@ -16,9 +16,9 @@ class PipController extends Controller
     public function viewAsVisitor($user_id)
     {
         $user = User::find(WebTool::decode($user_id)) ?? null;
-        dd($user);
+        // dd($user);
         if ($user) {
-            return $this->index($user->id);
+            return $this->AdminIndex($user->id);
         }
     }
 
@@ -119,6 +119,30 @@ class PipController extends Controller
             return redirect('/pip/directory');
 
         return view('portal.' . auth()->user()->type)->with([
+            'message' => $message,
+            'user' => auth()->user(),
+            'flag' => $visFlag,
+            'tag' => $tag,
+            'profile' => $profile,
+            'title' => 'Welcome to Portal ' . auth()->user()->name,
+        ]);
+    }
+
+    public function AdminIndex($visitor = 0)
+    {
+
+        if (!$message = session('message'))
+            $message = '';
+
+        $tag = null;
+        $visFlag = ownership($visitor);
+
+        if ($visitor > 0) {
+            $tag = User::find($visitor) ?? null;
+            $profile = $tag->profile();
+        }
+
+        return view('portal.' . $profile)->with([
             'message' => $message,
             'user' => auth()->user(),
             'flag' => $visFlag,
