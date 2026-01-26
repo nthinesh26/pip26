@@ -11,7 +11,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/profile/application/fill', [PipController::class, 'formFilling']);
     Route::get('/profile/application/fill/{page}', [PipController::class, 'formWithPage']);
     Route::get('/pip/profile/create-wishlist', [WishListController::class, 'createWishListWindow']);
-    Route::get('/pip/profile/{profile_id}', [PipController::class, 'viewAsVisitor']);
+
     Route::get('/pip/download/files/{file}/{name}', [PipController::class, 'downloadFile']);
 
 
