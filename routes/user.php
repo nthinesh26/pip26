@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DirectoryController;
 use App\Http\Controllers\GeneralController;
+use App\Http\Controllers\PipController;
 use App\Http\Controllers\UserController;
 
 Route::middleware(['auth', 'role:admin'])->group(function () {
