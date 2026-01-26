@@ -25,7 +25,7 @@
             <ul>
                 <li class="[[NAV_ACTIVE_HOME]]"><a href="https://myip.mod.gov.my/" data-i18n="nav_home" target="_blank">Laman Utama</a></li>
                 @if(auth()->user()->type == 'admin')
-                <li class="[[NAV_ACTIVE_DIR]]" data-i18n="nav_directory"><a
+                <li class="[[NAV_ACTIVE_DIR]]" data-i18n="nav_directory" style="display: none;"><a
                         href="@if (auth()->user()->type == 'admin') {{ '/pip/directory' }} @else {{ '#' }} @endif">DIREKTORI</a>
                 </li>
                 @endif
