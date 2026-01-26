@@ -142,7 +142,7 @@ class PipController extends Controller
             $profile = $tag->profile();
         }
 
-        return view('portal.' . $profile)->with([
+        return view('portal.' . $tag->type)->with([
             'message' => $message,
             'user' => $tag,
             'flag' => $visFlag,
