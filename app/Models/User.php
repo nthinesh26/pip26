@@ -134,7 +134,8 @@ class User extends Authenticatable
             // echo $org->type;
             return $org->type;
         }else{
-            return $this->profile()->$type[$this->type];
+            $act = $type[$this->type];
+            return $this->profile()->$act;
         }
     }
 }
