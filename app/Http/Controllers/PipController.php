@@ -139,6 +139,7 @@ class PipController extends Controller
 
         if ($visitor > 0) {
             $tag = User::find($visitor) ?? null;
+            dd($tag);
             $profile = $tag->profile();
         }
 
