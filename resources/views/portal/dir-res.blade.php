@@ -90,7 +90,7 @@
                                     {{ $city }}, {{ $state }}
                                 </div>
                                 <p class="mt-2 mb-2" style="font-size:0.95rem;">
-                                    <a href="/pip/access/{{ WebTool::encode($user->id) }}"><span
+                                    <a href="/pip/access/{{ WebTool::encode($user->id) }}" target="_blank"><span
                                             data-i18n="dir_view_details">View Details</span></a>
                                 </p>
                             </div>
