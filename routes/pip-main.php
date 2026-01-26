@@ -14,6 +14,7 @@ Route::get('/pip/registration/oem', [OEMController::class, 'index']);
 Route::get('/pip/registration/royal', [RoyalController::class, 'index']);
 Route::get('/pip/registration/institute', [InstituteController::class, 'index']);
 
+
 Route::get('/pip/directory', [DirectoryController::class, 'index'])->name('directory');
 Route::get('/pip/directory/list/{type}', [DirectoryController::class, 'filterByCtg']);
 
