@@ -77,9 +77,15 @@
                 PNG. Saiz maksimum: 1MB.</p>
             <div class="pip-avatar-uploader">
                 <div class="pip-avatar-uploader__preview">
+                    @if($flag)
                     <img alt="Pratonton gambar profil" id="pipAvatarPreview" @if ($flag) src="{{ auth()->user()->profile()->logo == 'not-submitted' ? '/pip/assets/img/userProfileBotak.png' : '/' . auth()->user()->profile()->logo }}"
                             @else
                                 src="/{{ $tag->profile()->logo }}" @endif />
+                    @else
+                    <img alt="Pratonton gambar profil" id="pipAvatarPreview" @if ($flag) src="{{ $tag->profile()->logo == 'not-submitted' ? '/pip/assets/img/userProfileBotak.png' : '/' . $tag->profile()->logo }}"
+                            @else
+                                src="/{{ $tag->profile()->logo }}" @endif />
+                    @endif
                 </div>
                 <div class="pip-avatar-uploader__controls">
                     <label class="form-label" for="profile_image_upload">Pilih fail</label>
