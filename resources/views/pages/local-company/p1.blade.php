@@ -350,11 +350,13 @@
             // dd($exps);
             $exps = json_decode($exps[0]);
         @endphp
+        @if(count($exps) > 0)
         const matchValues = [
             @foreach ($exps as $exp)
                 "{{ $exp }}",
             @endforeach
         ];
+        @endif
 
         document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
             if (matchValues.includes(cb.value)) {

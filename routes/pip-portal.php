@@ -11,13 +11,11 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/profile/application/fill', [PipController::class, 'formFilling']);
     Route::get('/profile/application/fill/{page}', [PipController::class, 'formWithPage']);
     Route::get('/pip/profile/create-wishlist', [WishListController::class, 'createWishListWindow']);
-    Route::get('/pip/directory', [DirectoryController::class, 'index'])->name('directory');
-    Route::get('/pip/directory/list/{type}', [DirectoryController::class, 'filterByCtg']);
     Route::get('/pip/profile/{profile_id}', [PipController::class, 'viewAsVisitor']);
     Route::get('/pip/download/files/{file}/{name}', [PipController::class, 'downloadFile']);
 
 
-    Route::post('/pip/dict/sorting', [DirectoryController::class, 'dictSorting']);
+
     Route::post('/pip/post/logo', [PipController::class, 'postLogo']);
     Route::post('/pip/local/complete/registration', [PipController::class, 'completeLocalReg']);
     Route::post('/pip/local/icp/reception/post', [PipPortalController::class, 'icpRecp']);
