@@ -35,8 +35,6 @@
                                 $col_name = $user->companyName();
                                 $type = $col_type = $user->displayType();
                                 $desc = $user->desc();
-                                $desc_render = $user->desc_render();
-
                             @endphp
                             @php
                                 $address = '';
@@ -81,7 +79,7 @@
 
                                 <p class="mt-2 mb-2" style="font-size:0.95rem;">
                                     @if ($desc != '_')
-                                        {{ $profile->$desc_render }}
+                                        {{ $user->desc_render() }}
                                     @endif
                                 </p>
 
