@@ -46,14 +46,32 @@ class LoginRequest extends FormRequest
             'password' => $this->password,
             'status' => 'active'
         ], $this->boolean('remember'))) {
-            RateLimiter::hit($this->throttleKey());
+        if (RateLimiter::tooManyAttempts($this->throttleKey(), 5)) {
+                throw ValidationException::withMessages([
+                    'email' => __('auth.throttle', [
+                        'seconds' => RateLimiter::availableIn($this->throttleKey()),
+                    ]),
+                ]);
+            }
+
+            if (! Auth::attempt($this->only('email', 'password'), $this->boolean('remember'))) {
+
+                RateLimiter::hit($this->throttleKey(), 60); // 60 seconds lock
+
+                throw ValidationException::withMessages([
+                    'email' => __('auth.failed'),
+                ]);
+            }
+
+            // ✅ SUCCESS → RESET COUNTER
+            RateLimiter::clear($this->throttleKey());
 
             throw ValidationException::withMessages([
                 'email' => trans('auth.failed'),
             ]);
         }
 
-        RateLimiter::clear($this->throttleKey());
+        // RateLimiter::clear($this->throttleKey());
     }
 
     /**
