@@ -86,3 +86,7 @@
         </script>
     </main>
 @endsection
+
+@section('script-inject')
+     <script src="/pip/assets/js/pip-profile.js?x={{ rand(111, 999) }}" defer></script>
+@endsection

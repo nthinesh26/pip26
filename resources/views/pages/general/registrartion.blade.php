@@ -47,8 +47,6 @@
     @include('pages.general.components.js-inject')
     @yield('script-inject')
 
-
-
     <script src="/pip/assets/js/portal-form.js?x={{ rand(111, 999) }}" defer></script>
     <script src="/pip/assets/js/content-dictionary-i18n.js?x={{ rand(111, 999) }}" defer></script>
     <script src="/pip/assets/js/portal-form-validation.js" defer></script>
