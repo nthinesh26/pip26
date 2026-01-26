@@ -8,6 +8,7 @@
 
     @php
         if ($flag) {
+            die(var_dump($user));
             $address = '';
             if ($user->type == 'local') {
                 $txt = json_decode($profile->company_address);
@@ -26,7 +27,7 @@
             $user = $tag;
 
             $profile = $user->profile();
-            die(var_dump($profile));
+
             $address = '';
             if ($user->type == 'local') {
                 $txt = json_decode($profile->company_address);
