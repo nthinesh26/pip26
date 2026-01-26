@@ -10,7 +10,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [PipController::class, 'index'])->name('dashboard');
     Route::get('/profile/application/fill', [PipController::class, 'formFilling']);
     Route::get('/profile/application/fill/{page}', [PipController::class, 'formWithPage']);
-    Route::get('/pip/profile/create-wishlist', [WishListController::class, 'createWishListWindow']);
+    // Route::get('/pip/profile/create-wishlist', [WishListController::class, 'createWishListWindow']);
 
     Route::get('/pip/download/files/{file}/{name}', [PipController::class, 'downloadFile']);
 
