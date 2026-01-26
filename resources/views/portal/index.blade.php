@@ -104,7 +104,11 @@
                                     data-i18n="badge_partner">RAKAN IP</span>
                             </div>
                             <p class="pip-profile-desc">
-                            <h6>{{ auth()->user()->displayType() }}, {{ $city }} . {{ $state }}</h6>
+                            @if($flag)
+                                <h6>{{ auth()->user()->displayType() }}, {{ $city }} . {{ $state }}</h6>
+                            @else
+                                <h6>{{ $user->displayType() }}, {{ $city }} . {{ $state }}</h6>
+                            @endif
                             </p>
                         </div>
                         <div class="pip-profile-actions">
@@ -136,7 +140,7 @@
                             @if (!$tag)
                                 {{ auth()->user()->name }}
                             @else
-                                {{ $tag->name }}
+                                {{ $user->name }}
                             @endif
                         </h2>
                         <p class="pip-dash-sub" id="pipDashMessage" data-i18n="dash_message_full">
