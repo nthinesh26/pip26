@@ -141,13 +141,12 @@ class PipController extends Controller
             $tag = User::find($visitor) ?? null;
             $profile = $tag->profile();
         }
-        // dd($tag->type);
 
-        return view('portal.' . $tag->type)->with([
+        return view('portal.' . $profile)->with([
             'message' => $message,
             'user' => $tag,
             'flag' => $visFlag,
-            'tag' => $tag,
+            'tag' => $tag->type,
             'profile' => $profile,
             'title' => 'Welcome to Portal ' . $tag->name,
         ]);
