@@ -11,7 +11,7 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::get('/dashboard', [GeneralController::class, 'index'])->name('dashbaord');
     Route::get('/user/management', [UserController::class, 'index']);
     Route::get('/pip/registration/institute', [InstituteController::class, 'index']);
-    Route::get('/pip/profile/{profile_id}', [PipController::class, 'viewAsVisitor']);
+    Route::get('/pip/access/{profile_id}', [PipController::class, 'viewAsVisitor']);
 
     Route::get('/pip/directory', [DirectoryController::class, 'index'])->name('directory');
     Route::get('/pip/directory/list/{type}', [DirectoryController::class, 'filterByCtg']);
