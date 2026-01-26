@@ -23,8 +23,8 @@
                                 style="border-right:1px solid #eee;background:#fff;">
                                 @if ($profile->logo)
                                    <img alt="Logo" class="img-fluid"
-                                        src="{{ ($profile->logo == 'not-submitted' || $profile->logo == 'error') ? '/pip/assets/img/userProfileBotak.png' : '/' . $profile->logo }}"
-                                        style="max-height:140px; object-fit:contain;" />
+                                        src="{{ ($profile->logo == 'not-submitted' || $profile->logo == 'error' || $profile->logo == '/pip/assets/img/userProfileBotak.png') ? '/pip/assets/img/userProfileBotak.png' : '/' . $profile->logo }}"
+                                        style="max-height:140px;object-fit:contain;" />
                                 @else
                                     <img alt="Logo [[NAMA_SYARIKAT_FROM_DB]]" class="img-fluid"
                                         src="/pip/assets/img/userProfileBotak.png"
