@@ -21,7 +21,7 @@
                         <label class="form-label mb-1" data-i18n="dir_filter_category">Kategori</label>
                         <select class="form-select" name="kategori_entiti" id="kategori_entiti">
                             <option selected="all" value="all" data-i18n="dir_opt_all">Semua</option>
-                            <option value="local" data-i18n="dir_opt_local">Syarikat Tempatan</option>
+                            <option value="Syarikat Tempatan" data-i18n="dir_opt_local">Syarikat Tempatan</option>
                             <option value="royal" data-i18n="dir_opt_agency">Agensi Kerajaan</option>
                             <option value="institute" data-i18n="dir_opt_academia">Institusi Penyelidikan & Akademia
                             </option>
