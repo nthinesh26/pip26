@@ -1,11 +1,12 @@
 <?php
 // public Registration window :: Get and Post
 
-use App\Http\Controllers\PipController;
+use App\Http\Controllers\DirectoryController;
 use App\Http\Controllers\GeneralController;
-use App\Http\Controllers\OEM\OEMController;
-use App\Http\Controllers\Royal\RoyalController;
 use App\Http\Controllers\Institute\InstituteController;
+use App\Http\Controllers\OEM\OEMController;
+use App\Http\Controllers\PipController;
+use App\Http\Controllers\Royal\RoyalController;
 
 Route::get('/pip/registration/local-company', [PipController::class, 'regLocalCom']);
 Route::get('/pip/account/active/{user_account}', [GeneralController::class, 'activateAccount']);
