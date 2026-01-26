@@ -44,3 +44,9 @@
 
     @include('portal.sub.wish-list-view', ['profile' => $profile])
 @endsection
+
+@section('script-inject')
+<script src="/pip/assets/js/portal-form.js?x={{ rand(111, 999) }}" defer></script>
+<script src="/pip/assets/js/content-dictionary-i18n.js?x={{ rand(111, 999) }}" defer></script>
+<script src="/pip/assets/js/portal-i18n.v1.0.js?x={{ rand(111, 999) }}" defer></script>
+@endsection

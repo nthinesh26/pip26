@@ -295,6 +295,7 @@
 
     <script defer="" src="/pip/assets/js/pip-profile.js"></script>
     <script defer src="/pip/assets/js/pip-i18n.js"></script>
+    @yield('script-inject')
     <script>
         $(document).ready(function(e) {
 
