@@ -5,7 +5,7 @@ use App\Http\Controllers\WishListController;
 use App\Http\Controllers\DirectoryController;
 use App\Http\Controllers\PipPortalController;
 
-Route::middleware(['auth'])->group(function () {
+Route::middleware('auth')->group(function () {
     Route::get('/', [PipController::class, 'index']);
     Route::get('/dashboard', [PipController::class, 'index'])->name('dashboard');
     Route::get('/profile/application/fill', [PipController::class, 'formFilling']);
