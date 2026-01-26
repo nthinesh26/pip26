@@ -10,6 +10,7 @@ class WishListController extends Controller
 {
 
 	public function wishListWindow(){
+        dd('WL');
         if(!$message = session('message'))
             $message = '';
             return view('portal.wishlist.window')->with([
