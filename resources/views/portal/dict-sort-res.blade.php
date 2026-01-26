@@ -129,7 +129,7 @@
                                     {{ $city }}, {{ $state }}
                                 </div>
                                 <p class="mt-2 mb-2" style="font-size:0.95rem;">
-                                    <a href="/pip/profile/{{ WebTool::encode($usr->id) }}"><span
+                                    <a href="/pip/access/{{ WebTool::encode($usr->id) }}"><span
                                             data-i18n="dir_view_details">View Details</span></a>
                                 </p>
                             </div>
