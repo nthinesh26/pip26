@@ -19,7 +19,7 @@ return Application::configure(basePath: dirname(__DIR__))
         'metrics' => RestrictMetricsAccess::class,
     ]);
     $middleware->apppend(
-        ContentTypeOptionsMiddleware::class,
+        // ContentTypeOptionsMiddleware::class,
     );
 })
 ->withExceptions(function (Exceptions $exceptions): void {
