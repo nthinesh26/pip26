@@ -55,7 +55,9 @@
             @include('portal.dir-res')
         </div>
     </section>
-
+    <div class="row">
+        <div class="col-12"></div>
+    </div>
     @include('portal.dir-js')
     <script id="directory-filter-js">
     (function() {
