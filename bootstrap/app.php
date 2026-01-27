@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\ContentSecurityPolicyMiddleware;
 use App\Http\Middleware\ContentTypeOptionsMiddleware;
 use App\Http\Middleware\RestrictMetricsAccess;
 use App\Http\Middleware\RoleMiddleware;
@@ -17,10 +18,12 @@ return Application::configure(basePath: dirname(__DIR__))
     $middleware->alias([
         'role' => RoleMiddleware::class,
         'metrics' => RestrictMetricsAccess::class,
+        'csp' => ContentSecurityPolicyMiddleware::class,
     ]);
-    $middleware->append(
-        ContentTypeOptionsMiddleware::class
-    );
+    $middleware->append([
+        ContentTypeOptionsMiddleware::class,
+        ContentSecurityPolicyMiddleware::class
+    ]);
 })
 ->withExceptions(function (Exceptions $exceptions): void {
         //
