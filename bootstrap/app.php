@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\ContentTypeOptionsMiddleware;
 use App\Http\Middleware\RestrictMetricsAccess;
 use App\Http\Middleware\RoleMiddleware;
 use Illuminate\Foundation\Application;
@@ -17,6 +18,9 @@ return Application::configure(basePath: dirname(__DIR__))
         'role' => RoleMiddleware::class,
         'metrics' => RestrictMetricsAccess::class,
     ]);
+    $middleware->apppend(
+        ContentTypeOptionsMiddleware::class,
+    );
 })
 ->withExceptions(function (Exceptions $exceptions): void {
         //
