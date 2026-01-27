@@ -10,7 +10,7 @@ Route::get('/hq-test', function(){
 });
 
 Route::get('/h2-page', function(){
-    return view('tester.h2');
+    return view('tester.t2');
 });
 
 
