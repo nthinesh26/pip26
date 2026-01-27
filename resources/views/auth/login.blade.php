@@ -31,9 +31,9 @@
 
             <nav class="pip-menu" aria-label="Menu utama">
                 <ul>
-                    <li><a href="https://myip.mod.gov.my" target="_blank">Laman Utama</a></li>
-                    <li><a href="https://myip.mod.gov.my/mengenai-portal">Mengenai Portal</a></li>
-                    <li><a href="https://myip.mod.gov.my/hubungi-kami" target="_blank">Hubungi Kami</a></li>
+                    <li><a href="{{ env('JOOMLA_WEB') }}" target="_blank">Laman Utama</a></li>
+                    <li><a href="{{ env('JOOMLA_WEB') }}/mengenai-portal">Mengenai Portal</a></li>
+                    <li><a href="{{ env('JOOMLA_WEB') }}/hubungi-kami" target="_blank">Hubungi Kami</a></li>
                 </ul>
             </nav>
 
@@ -78,7 +78,7 @@
                         <div class="pip-login-links">
                             <a href="/forgot-password">Lupa Kata Laluan?</a>
                             <span aria-hidden="true">|</span>
-                            <a href="https://myip.mod.gov.my/daftar-organisasi"  id="reg" target="_blank">Daftar</a>
+                            <a href="{{ env('JOOMLA_WEB') }}/daftar-organisasi"  id="reg" target="_blank">Daftar</a>
                         </div>
                         @if (session('status'))
                             <div class="alert alert-success">
@@ -104,9 +104,9 @@
     <footer class="pip-footer">
         <div class="container pip-footer-inner">
             @include('pip.fl')
-            <a class="pip-footer-link" href="https://myip.mod.gov.my/polisi-privasi"><span data-i18n="footer_privacy">POLISI PRIVASI</span></a>
+            <a class="pip-footer-link" href="{{ env('JOOMLA_WEB') }}/polisi-privasi"><span data-i18n="footer_privacy">POLISI PRIVASI</span></a>
             <a class="pip-footer-link" href="javascript:void(0)"><span data-i18n="footer_terms">TERMA PENGGUNAAN</span></a>
-            <a class="pip-footer-link" href="https://myip.mod.gov.my/hubungi-kami" target="_blank" data-i18n="nav_contact">HUBUNGI KAMI</a>
+            <a class="pip-footer-link" href="{{ env('JOOMLA_WEB') }}/hubungi-kami" target="_blank" data-i18n="nav_contact">HUBUNGI KAMI</a>
         </div>
         <div class="pip-footer-bar"></div>
     </footer>
@@ -120,9 +120,9 @@
     <script>
             $(document).ready(function(e){
                 if($("#reg").html() == "Daftar")
-                    $("#reg").attr('href', 'https://myip.mod.gov.my/daftar-organisasi');
+                    $("#reg").attr('href', '{{ env('JOOMLA_WEB') }}/daftar-organisasi');
                 else
-                    $("#reg").attr('href', 'https://myip.mod.gov.my/register-organization');
+                    $("#reg").attr('href', '{{ env('JOOMLA_WEB') }}/register-organization');
             });
 
             document.addEventListener("click", function (e) {
@@ -132,9 +132,9 @@
               const v = (btn.getAttribute("data-lang") || btn.getAttribute("data-lang-switch") || "").toLowerCase();
 
               if(v == 'en')
-                $("#reg").attr('href', 'https://myip.mod.gov.my/register-organization');
+                $("#reg").attr('href', '{{ env('JOOMLA_WEB') }}/register-organization');
               else
-                $("#reg").attr('href', 'https://myip.mod.gov.my/daftar-organisasi');
+                $("#reg").attr('href', '{{ env('JOOMLA_WEB') }}/daftar-organisasi');
               e.preventDefault();
               //setLanguage(v);
         });

@@ -31,11 +31,11 @@
 
             <nav aria-label="Menu utama" class="pip-menu">
                 <ul>
-                    <li class="[[NAV_ACTIVE_HOME]]"><a href="https://myip.mod.gov.my/" data-i18n="nav_home">Laman Utama</a></li>
+                    <li class="[[NAV_ACTIVE_HOME]]"><a href="{{ env('JOOMLA_WEB') }}/" data-i18n="nav_home">Laman Utama</a></li>
                     <li class="[[NAV_ACTIVE_DIR]]" style="display: none;"><a href="#" data-i18n="nav_directory">DIREKTORI</a>
                     </li>
-                    <li class="[[NAV_ACTIVE_ABOUT]]"><a href="https://myip.mod.gov.my/mengenai-portal" data-i18n="nav_about">Mengenai Portal</a></li>
-                    <li class="[[NAV_ACTIVE_CONTACT]]"><a href="https://myip.mod.gov.my/hubungi-kami" data-i18n="nav_contact">Hubungi Kami</a></li>
+                    <li class="[[NAV_ACTIVE_ABOUT]]"><a href="{{ env('JOOMLA_WEB') }}/mengenai-portal" data-i18n="nav_about">Mengenai Portal</a></li>
+                    <li class="[[NAV_ACTIVE_CONTACT]]"><a href="{{ env('JOOMLA_WEB') }}/hubungi-kami" data-i18n="nav_contact">Hubungi Kami</a></li>
                 </ul>
             </nav>
 
@@ -61,11 +61,11 @@
                 @include('pip.fl')
             </div>
             <div class="pip-footer-links">
-                <a class="pip-footer-link" href="https://myip.mod.gov.my/polisi-privasi"><span data-i18n="footer_privacy">POLISI
+                <a class="pip-footer-link" href="{{ env('JOOMLA_WEB') }}/polisi-privasi"><span data-i18n="footer_privacy">POLISI
                         PRIVASI</span></a>
                 <a class="pip-footer-link" href="#"><span data-i18n="footer_terms">TERMA
                         PENGGUNAAN</span></a>
-                <a class="pip-footer-link" href="https://myip.mod.gov.my/hubungi-kami"><span data-i18n="footer_contact">HUBUNGI
+                <a class="pip-footer-link" href="{{ env('JOOMLA_WEB') }}/hubungi-kami"><span data-i18n="footer_contact">HUBUNGI
                         KAMI</span></a>
             </div>
         </div>

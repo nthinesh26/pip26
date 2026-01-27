@@ -125,9 +125,9 @@
 
         <nav class="pip-menu" aria-label="Menu utama">
             <ul>
-                <li><a href="https://myip.mod.gov.my" target="_blank">Laman Utama</a></li>
-                <li><a href="https://myip.mod.gov.my/mengenai-portal">Mengenai Portal</a></li>
-                <li><a href="https://myip.mod.gov.my/hubungi-kami" target="_blank">Hubungi Kami</a></li>
+                <li><a href="{{ env('JOOMLA_WEB') }}" target="_blank">Laman Utama</a></li>
+                <li><a href="{{ env('JOOMLA_WEB') }}/mengenai-portal">Mengenai Portal</a></li>
+                <li><a href="{{ env('JOOMLA_WEB') }}/hubungi-kami" target="_blank">Hubungi Kami</a></li>
             </ul>
         </nav>
 
@@ -198,13 +198,13 @@
         <footer class="pip-footer">
     <div class="container pip-footer-inner">
         <img class="pip-footer-logo" src="/pip/assets/img/footer-logo-portal.png" alt="MINDEF">
-        <a href="https://myip.mod.gov.my/polisi-privasi" target="_blank">
+        <a href="{{ env('JOOMLA_WEB') }}/polisi-privasi" target="_blank">
             <h3 class="pip-footer-link">POLISI PRIVASI</h3>
         </a>
-        <a href="https://myip.mod.gov.my/terma-pengunaan" target="_blank">
+        <a href="{{ env('JOOMLA_WEB') }}/terma-pengunaan" target="_blank">
             <h3 class="pip-footer-link">TERMA PENGUNAAN</h3>
         </a>
-        <a href="https://myip.mod.gov.my/hubungi-kami" target="_blank">
+        <a href="{{ env('JOOMLA_WEB') }}/hubungi-kami" target="_blank">
             <h3 class="pip-footer-link">HUBUNGI KAMI</h3>
         </a>
     </div>

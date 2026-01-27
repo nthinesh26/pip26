@@ -93,9 +93,9 @@ integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJ
 
         <nav class="pip-menu" aria-label="Menu utama">
             <ul>
-                <li><a href="https://myip.mod.gov.my" target="_blank">Laman Utama</a></li>
-                <li><a href="https://myip.mod.gov.my/mengenai-portal">Mengenai Portal</a></li>
-                <li><a href="https://myip.mod.gov.my/hubungi-kami" target="_blank">Hubungi Kami</a></li>
+                <li><a href="{{ env('JOOMLA_WEB') }}" target="_blank">Laman Utama</a></li>
+                <li><a href="{{ env('JOOMLA_WEB') }}/mengenai-portal">Mengenai Portal</a></li>
+                <li><a href="{{ env('JOOMLA_WEB') }}/hubungi-kami" target="_blank">Hubungi Kami</a></li>
             </ul>
         </nav>
 
