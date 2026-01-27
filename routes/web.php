@@ -9,6 +9,10 @@ Route::get('/hq-test', function(){
     return view('tester.t1');
 });
 
+Route::get('/h2-page', function(){
+    return view('tester.h2');
+});
+
 
 Route::get('/logout', function () {
     auth()->logout();
