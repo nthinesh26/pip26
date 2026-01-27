@@ -6,7 +6,7 @@ use App\Mail\TestMail;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/hq-test', function(){
-    return view('tester.test');
+    return view('tester.t1');
 });
 
 
