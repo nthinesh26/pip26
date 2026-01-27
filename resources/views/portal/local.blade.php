@@ -20,7 +20,7 @@
 
             @if ($user->profile()->exps != 'null' && $user->profile()->exps)
                 @foreach (json_decode($profile->exps) as $exp)
-                    <div class="pip-pill">{{ $exp }}</div>
+                    <div class="pip-pill" data-i18n-orig-value="{{ $exp }}">{{ $exp }}</div>
                 @endforeach
             @endif
 
