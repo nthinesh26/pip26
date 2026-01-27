@@ -12,7 +12,7 @@ Route::get('/pip/registration/local-company', [PipController::class, 'regLocalCo
 Route::get('/pip/account/active/{user_account}', [GeneralController::class, 'activateAccount']);
 Route::get('/pip/registration/oem', [OEMController::class, 'index']);
 Route::get('/pip/registration/royal', [RoyalController::class, 'index']);
-
+Route::get('/pip/registration/institute', [InstituteController::class, 'index']);
 
 Route::post('/pip/dict/sorting', [DirectoryController::class, 'dictSorting']);
 
