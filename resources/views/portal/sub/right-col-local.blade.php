@@ -95,19 +95,19 @@
          </div>
          <div class="pip-box-body">
              <ul class="pip-doc-list">
-                 @if (auth()->user()->profile()->ssm_cert_upload && auth()->user()->profile()->mof_cert_upload)
-                     @if (auth()->user()->profile()->ssm_cert_upload != 'will_be_updated')
+                 @if ($user->profile()->ssm_cert_upload && $user->profile()->mof_cert_upload)
+                     @if ($user->profile()->ssm_cert_upload != 'will_be_updated')
                          <li class="pip-doc-item">
                              <a class="pip-doc-link"
-                                 href="/pip/download/files/{{ WebTool::enc(auth()->user()->profile()->ssm_cert_upload) }}/{{ WebTool::enc('ssm_cert.pdf') }}"
+                                 href="/pip/download/files/{{ WebTool::enc($user->profile()->ssm_cert_upload) }}/{{ WebTool::enc('ssm_cert.pdf') }}"
                                  rel="noopener">
                                  Download SSM
                              </a>
                          </li>
                      @endif
-                     @if (auth()->user()->profile()->mof_cert_upload != 'will_be_updated')
+                     @if ($user->profile()->mof_cert_upload != 'will_be_updated')
                          <a class="pip-doc-link"
-                             href="/pip/download/files/{{ WebTool::enc(auth()->user()->profile()->mof_cert_upload) }}/{{ WebTool::enc('mof_cert_upload.pdf') }}"
+                             href="/pip/download/files/{{ WebTool::enc($user->profile()->mof_cert_upload) }}/{{ WebTool::enc('mof_cert_upload.pdf') }}"
                              rel="noopener">
                              Download MOF
                          </a>
