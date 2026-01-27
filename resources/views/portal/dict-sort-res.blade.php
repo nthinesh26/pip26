@@ -119,8 +119,8 @@
                                 </div>
 
                                 <p class="mt-2 mb-2" style="font-size:0.95rem;">
-                                    @if ($desc != '_')
-                                        {{ $profile->$desc }}
+                                   @if ($desc != '_')
+                                        {{ $user->desc_render() }}
                                     @endif
                                 </p>
 
