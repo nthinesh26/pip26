@@ -1,5 +1,6 @@
 <script>
     $(document).ready(function(e) {
+        $(".pip-footer").addClass("container");
         $("#dir-sorting").change(function(e) {
             let v = $(this).val();
 
