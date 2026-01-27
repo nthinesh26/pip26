@@ -16,10 +16,7 @@ class ContentTypeOptionsMiddleware
     public function handle(Request $request, Closure $next): Response
     {
         $response = $next($request);
-        $response->headers->set(
-            'X-Content-Type-Options',
-            'nosniff'
-        );
-        return $next($request);
+        $response->headers->set('X-Content-Type-Options', 'nosniff');
+        return $response;
     }
 }

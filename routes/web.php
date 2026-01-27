@@ -5,6 +5,9 @@ use App\Http\Controllers\ProfileController;
 use App\Mail\TestMail;
 use Illuminate\Support\Facades\Route;
 
+Route::get('/header-test', function(){
+    return response('OK');
+});
 
 
 Route::get('/logout', function () {
