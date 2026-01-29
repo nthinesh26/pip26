@@ -19,6 +19,8 @@ class PipController extends Controller
         // dd($user);
         if ($user) {
             return $this->AdminIndex($user->id);
+        }else{
+            echo "Profile not found!";
         }
     }
 
