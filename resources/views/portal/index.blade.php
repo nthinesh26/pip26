@@ -78,9 +78,9 @@
                 <div class="pip-profile-body">
                     <div class="pip-profile-avatar">
                         <img alt="Logo Organisasi"
-                            @if ($flag) src="{{ auth()->user()->profile()->logo == 'not-submitted' ? '/pip/assets/img/userProfileBotak.png' : '' . auth()->user()->profile()->logo }}"
+                            @if ($flag) src="{{ auth()->user()->profile()->logo == 'not-submitted' ? '/pip/assets/img/userProfileBotak.png' : '/' . auth()->user()->profile()->logo }}"
                             @else 
-                                src="{{ $user->profile()->logo == 'not-submitted' ? '/pip/assets/img/userProfileBotak.png' : '' . $user->profile()->logo }}"
+                                src="{{ $user->profile()->logo == 'not-submitted' ? '/pip/assets/img/userProfileBotak.png' : '/' . $user->profile()->logo }}"
                             @endif />
                         @if ($flag)
                             <button class="pip-avatar-edit pip-avatar-edit--overlay" id="pipAvatarEditBtn"
