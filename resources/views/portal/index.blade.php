@@ -135,11 +135,15 @@
             <div class="pip-dash-container">
                 <div class="pip-dash-head pip-dash-head--mock">
                     <div class="pip-dash-head-left">
-                        <h2 class="pip-dash-title" data-i18n="dash_welcome_html" data-i18n-mode="html">Selamat Kembali, <span id="pipAccountName">@if (!$tag)
-                                {!! auth()->user()->name !!}
+                        <h2 class="pip-dash-title">
+                            <span data-i18n="dash_welcome_html"></span>
+                            <span>&nbsp;&nbsp;</span>
+                            @if (!$tag)
+                                {!! ' '.auth()->user()->name !!}
                             @else
-                                {!! $user->name !!}
-                            @endif</span>!</h2>
+                                {!! ' '.$user->name !!}
+                            @endif
+                        </h2>
                         <p class="pip-dash-sub" id="pipDashMessage" data-i18n="dash_message_full">
                             Tahniah! Profil organisasi anda telah lengkap dan kini mempunyai akses penuh ke Portal
                             Industri Pertahanan.
