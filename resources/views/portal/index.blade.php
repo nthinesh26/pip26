@@ -137,7 +137,7 @@
                     <div class="pip-dash-head-left">
                         <h2 class="pip-dash-title">
                             <span data-i18n="dash_welcome_html"></span>
-                            <span>&nbsp;&nbsp;</span>
+                            <span>&nbsp;</span>
                             @if (!$tag)
                                 {!! ' '.auth()->user()->name !!}
                             @else
